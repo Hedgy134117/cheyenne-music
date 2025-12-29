@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Danchi Thesis</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#47">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/ShinseiKamattechan-DanchiThesis.jpg" />
+    </div>
 
-<h1>Danchi Thesis by Shinsei Kamattechan</h1>
-<img src="/imgs/ShinseiKamattechan-DanchiThesis.jpg" />
+    <p class="heading">
+        <i>Danchi Thesis</i> by Shinsei Kamattechan
+    </p>
+    <p class="subheading">#47</p>
 
-<p>Bursting with frenetic energy, <em>Danchi Thesis</em> is genuinely one of the zaniest records I listened to in 2025, combining high-energy J-rock with indietronica and occasional string arrangements.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/ShinseiKamattechan-DanchiThesis.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Bursting with frenetic energy, <em>Danchi Thesis</em> is genuinely one of the zaniest records I listened to in 2025, combining high-energy J-rock with indietronica and occasional string arrangements.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#47">&lt; List</a></p>
+        <p><a href="../48-AsherWhite-8TipsforCatastropheLiving">&lt; #48</a></p>
+        <p><a href="../46-SudanArchives-THEBPM">#46 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

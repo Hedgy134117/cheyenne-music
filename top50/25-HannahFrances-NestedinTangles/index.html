@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Nested in Tangles</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#25">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/HannahFrances-NestedinTangles.jpg" />
+    </div>
 
-<h1>Nested in Tangles by Hannah Frances</h1>
-<img src="/imgs/HannahFrances-NestedinTangles.jpg" />
+    <p class="heading">
+        <i>Nested in Tangles</i> by Hannah Frances
+    </p>
+    <p class="subheading">#25</p>
 
-<p>In 2024, Hannah Frances’ grief-stricken <em>Keeper of the Shepherd</em> captivated many. This year, she has already blown it out of the water with a record that explores familial trauma and subverts folk tradition. The arrangements are dense and captivating, with touches of free jazz and experimentation coming through that harken to 70’s Joni. That being said, some of the more uncanny vocal layering (mainly on the opening title track) hints at the grandiose art pop of Julia Holter, and there is also plenty of Americana influence that brings a lot of warmth to the mix. The mixture of ideas makes for one of the most captivating singer-songwriter projects of the year.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/HannahFrances-NestedinTangles.jpg" />
+    </div>
 
+    <div class="review">
+        <p>In 2024, Hannah Frances’ grief-stricken <em>Keeper of the Shepherd</em> captivated many. This year, she has already blown it out of the water with a record that explores familial trauma and subverts folk tradition. The arrangements are dense and captivating, with touches of free jazz and experimentation coming through that harken to 70’s Joni. That being said, some of the more uncanny vocal layering (mainly on the opening title track) hints at the grandiose art pop of Julia Holter, and there is also plenty of Americana influence that brings a lot of warmth to the mix. The mixture of ideas makes for one of the most captivating singer-songwriter projects of the year.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#25">&lt; List</a></p>
+        <p><a href="../26-McKinleyDixon-MagicAlive">&lt; #26</a></p>
+        <p><a href="../24-Deerhoof-NobleGodlikeinRuin">#24 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

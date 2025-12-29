@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Laini Tani</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#42">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/NadahElShazly-LainiTani.jpg" />
+    </div>
 
-<h1>Laini Tani by Nadah El Shazly</h1>
-<img src="/imgs/NadahElShazly-LainiTani.jpg" />
+    <p class="heading">
+        <i>Laini Tani</i> by Nadah El Shazly
+    </p>
+    <p class="subheading">#42</p>
 
-<p>Following the release of her 2017 debut <em>Ahwar,</em> Cairo-born Nadah El Shazly has expanded her career through film scoring. <em>Laini Tani</em> sees her finally return to recording her own music, and the results are wondrous. Combining Arab classical music melodies with electronics and dream pop, <em>Laini Tani</em> is a lush and expansive listen that almost feels trancelike.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/NadahElShazly-LainiTani.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Following the release of her 2017 debut <em>Ahwar,</em> Cairo-born Nadah El Shazly has expanded her career through film scoring. <em>Laini Tani</em> sees her finally return to recording her own music, and the results are wondrous. Combining Arab classical music melodies with electronics and dream pop, <em>Laini Tani</em> is a lush and expansive listen that almost feels trancelike.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#42">&lt; List</a></p>
+        <p><a href="../43-Dijon-BABY">&lt; #43</a></p>
+        <p><a href="../41-Titanic-HAGEN">#41 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

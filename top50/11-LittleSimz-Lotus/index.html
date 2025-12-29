@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Lotus</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,14 +113,32 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#11">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/LittleSimz-Lotus.jpg" />
+    </div>
 
-<h1>Lotus by Little Simz</h1>
-<img src="/imgs/LittleSimz-Lotus.jpg" />
+    <p class="heading">
+        <i>Lotus</i> by Little Simz
+    </p>
+    <p class="subheading">#11</p>
 
-<p><em>Lotus</em> was a unique listening experience for me this year because I both loved it immediately and took time to realize just how fantastic it was. Simz has been in an interesting position career-wise since <em>Sometimes I Might Be Introvert</em> because, while being inarguably on a victory lap, she has not fully attempted to re-capture that particular album’s symphonic, larger-than-life magic. In <em>Lotus’</em> case, the rapper creates an array of moments that approach career-defining grandiosity, but in a way that feels fresh and unique.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/LittleSimz-Lotus.jpg" />
+    </div>
+
+    <div class="review">
+        <p><em>Lotus</em> was a unique listening experience for me this year because I both loved it immediately and took time to realize just how fantastic it was. Simz has been in an interesting position career-wise since <em>Sometimes I Might Be Introvert</em> because, while being inarguably on a victory lap, she has not fully attempted to re-capture that particular album’s symphonic, larger-than-life magic. In <em>Lotus’</em> case, the rapper creates an array of moments that approach career-defining grandiosity, but in a way that feels fresh and unique.</p>
 <p>A lot of the tracks on <em>Lotus</em> are flavored with rock and jazz, as well as the Afrobeat influences she had been exploring prior in her career. This relatively new and invigorated sound produces moments that are incredibly energetic (“Thief”), funky (“Enough”), and a lot of fun (“Young”). That being said, though, <em>Lotus</em> counterbalances this fun and energy with a lot of probing into Little Simz’s relationships with others - whether she’s calling out those who have used or wronged her like on the opener “Thief,” or deeply interrogating familial relationships as in the vulnerable track “Blood.” After many replays, I’ve come to the conclusion that <em>Lotus</em>, with the varied sonic and emotional experiences it provides, is one of the most rewarding records of the year - and in Simz’ discography.</p>
 
+    </div>
+
+    <div class="nav">
+        <p><a href="../#11">&lt; List</a></p>
+        <p><a href="../12-Annahstasia-Tether">&lt; #12</a></p>
+        <p><a href="../10-Ninajirachi-ILoveMyComputer">#10 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

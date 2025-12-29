@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Los Thuthanaka</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#38">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/LosThuthanaka-LosThuthanaka.jpg" />
+    </div>
 
-<h1>Los Thuthanaka by Los Thuthanaka</h1>
-<img src="/imgs/LosThuthanaka-LosThuthanaka.jpg" />
+    <p class="heading">
+        <i>Los Thuthanaka</i> by Los Thuthanaka
+    </p>
+    <p class="subheading">#38</p>
 
-<p>What a wild ride! As acknowledged exhaustively by Pitchfork, <em>Los Thuthanaka</em> exists at a unique and special intersection of a lot of sounds. Specifically, it combines indigenous tradition and digital noise. “Phuju” is a huayño, a festive Andean dance, that is also full of noisy synths and DJ tags. “Apnaqkaya Titi” and “Awila” subvert traditional Bolivian dances with pummelling punk guitars and drums. It is the best and most dizzying kind of fusional, anticolonialist music - and it’s so maximalist that you really have to listen to it yourself to believe what’s happening.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/LosThuthanaka-LosThuthanaka.jpg" />
+    </div>
 
+    <div class="review">
+        <p>What a wild ride! As acknowledged exhaustively by Pitchfork, <em>Los Thuthanaka</em> exists at a unique and special intersection of a lot of sounds. Specifically, it combines indigenous tradition and digital noise. “Phuju” is a huayño, a festive Andean dance, that is also full of noisy synths and DJ tags. “Apnaqkaya Titi” and “Awila” subvert traditional Bolivian dances with pummelling punk guitars and drums. It is the best and most dizzying kind of fusional, anticolonialist music - and it’s so maximalist that you really have to listen to it yourself to believe what’s happening.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#38">&lt; List</a></p>
+        <p><a href="../39-DeLaSoul-CabinintheSky">&lt; #39</a></p>
+        <p><a href="../37-Horsegirl-PhoneticsOnandOn">#37 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

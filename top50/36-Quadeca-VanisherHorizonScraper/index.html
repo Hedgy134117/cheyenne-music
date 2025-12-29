@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Vanisher, Horizon Scraper</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#36">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/Quadeca-VanisherHorizonScraper.jpg" />
+    </div>
 
-<h1>Vanisher, Horizon Scraper by Quadeca</h1>
-<img src="/imgs/Quadeca-VanisherHorizonScraper.jpg" />
+    <p class="heading">
+        <i>Vanisher, Horizon Scraper</i> by Quadeca
+    </p>
+    <p class="subheading">#36</p>
 
-<p>By far Quadeca’s most ambitious project, and I would say that it was a successful experiment overall. Telling the story of a life using a sea voyage as an extended metaphor, Quadeca uses both overt visuals (via his feature film-length music video for this album) and sonic storytelling to convincingly evoke the ocean. Lots of great tracks that cover everything from folk to chamber pop to experimental rock (courtesy of Maruja), and the storytelling takes on mythical proportions.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/Quadeca-VanisherHorizonScraper.jpg" />
+    </div>
 
+    <div class="review">
+        <p>By far Quadeca’s most ambitious project, and I would say that it was a successful experiment overall. Telling the story of a life using a sea voyage as an extended metaphor, Quadeca uses both overt visuals (via his feature film-length music video for this album) and sonic storytelling to convincingly evoke the ocean. Lots of great tracks that cover everything from folk to chamber pop to experimental rock (courtesy of Maruja), and the storytelling takes on mythical proportions.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#36">&lt; List</a></p>
+        <p><a href="../37-Horsegirl-PhoneticsOnandOn">&lt; #37</a></p>
+        <p><a href="../35-TropicalFuckStorm-FairylandCodex">#35 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

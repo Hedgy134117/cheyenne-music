@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: THE BPM</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#46">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/SudanArchives-THEBPM.jpg" />
+    </div>
 
-<h1>THE BPM by Sudan Archives</h1>
-<img src="/imgs/SudanArchives-THEBPM.jpg" />
+    <p class="heading">
+        <i>THE BPM</i> by Sudan Archives
+    </p>
+    <p class="subheading">#46</p>
 
-<p>On her expansive follow-up to 2023’s <em>Natural Brown Prom Queen,</em> Sudan Archives continues her relentless musical exploration and pop prowess  as she documents love, ambition, and daily anxieties.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/SudanArchives-THEBPM.jpg" />
+    </div>
 
+    <div class="review">
+        <p>On her expansive follow-up to 2023’s <em>Natural Brown Prom Queen,</em> Sudan Archives continues her relentless musical exploration and pop prowess  as she documents love, ambition, and daily anxieties.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#46">&lt; List</a></p>
+        <p><a href="../47-ShinseiKamattechan-DanchiThesis">&lt; #47</a></p>
+        <p><a href="../45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName">#45 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

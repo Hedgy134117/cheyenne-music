@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: GOLLIWOG</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#28">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/billywoods-GOLLIWOG.jpg" />
+    </div>
 
-<h1>GOLLIWOG by billy woods</h1>
-<img src="/imgs/billywoods-GOLLIWOG.jpg" />
+    <p class="heading">
+        <i>GOLLIWOG</i> by billy woods
+    </p>
+    <p class="subheading">#28</p>
 
-<p>Billy Woods and his career are proof that horrorcore, while known for its shocking and cinematic elements, is also a great medium for retelling terrors of our own history and present. Over sonic backdrops that feel highly dissociative, Woods engages with images like being a vampire’s victim on “Misery,” and amputation on “Maquiladoras,” which he wrote in response to foundational anticolonialist Frantz Fanon. The record is one of his most atmospheric and has some of his most incisive songwriting to date.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/billywoods-GOLLIWOG.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Billy Woods and his career are proof that horrorcore, while known for its shocking and cinematic elements, is also a great medium for retelling terrors of our own history and present. Over sonic backdrops that feel highly dissociative, Woods engages with images like being a vampire’s victim on “Misery,” and amputation on “Maquiladoras,” which he wrote in response to foundational anticolonialist Frantz Fanon. The record is one of his most atmospheric and has some of his most incisive songwriting to date.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#28">&lt; List</a></p>
+        <p><a href="../29-KingGizzardtheLizardWizard-PhantomIsland">&lt; #29</a></p>
+        <p><a href="../27-GabyAmarantos-RockDoido">#27 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

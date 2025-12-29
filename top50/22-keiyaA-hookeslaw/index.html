@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: hooke’s law</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#22">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/keiyaA-hookeslaw.png" />
+    </div>
 
-<h1>hooke’s law by keiyaA</h1>
-<img src="/imgs/keiyaA-hookeslaw.png" />
+    <p class="heading">
+        <i>hooke’s law</i> by keiyaA
+    </p>
+    <p class="subheading">#22</p>
 
-<p>The best possible way to summarize the overarching theme of this record comes in words that keiyaA penned herself, saying that “a downward spiral is a loaded spring.” After the affirmational air of her debut (2020’s <em>Forever, Ya Girl)</em>, <em>hooke’s law</em> sees keiyaA embrace tension and struggle, and she emerges from the other side intact. Amidst struggles with mental health and love, the production takes on a relaxed, but experimental alternative r&amp;b sound full of crisp beats and spacey synths - with significant influence from IDM and breakbeat. The resulting album is simultaneously wise and relaxed, particularly with keiyaA’s cool melodies drifting woozily on top.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/keiyaA-hookeslaw.png" />
+    </div>
 
+    <div class="review">
+        <p>The best possible way to summarize the overarching theme of this record comes in words that keiyaA penned herself, saying that “a downward spiral is a loaded spring.” After the affirmational air of her debut (2020’s <em>Forever, Ya Girl)</em>, <em>hooke’s law</em> sees keiyaA embrace tension and struggle, and she emerges from the other side intact. Amidst struggles with mental health and love, the production takes on a relaxed, but experimental alternative r&amp;b sound full of crisp beats and spacey synths - with significant influence from IDM and breakbeat. The resulting album is simultaneously wise and relaxed, particularly with keiyaA’s cool melodies drifting woozily on top.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#22">&lt; List</a></p>
+        <p><a href="../23-YHWHNailgun-45Pounds">&lt; #23</a></p>
+        <p><a href="../21-Huremic-SeekingDarkness">#21 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

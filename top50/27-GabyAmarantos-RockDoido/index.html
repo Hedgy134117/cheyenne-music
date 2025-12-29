@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Rock Doido</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#27">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/GabyAmarantos-RockDoido.jpg" />
+    </div>
 
-<h1>Rock Doido by Gaby Amarantos</h1>
-<img src="/imgs/GabyAmarantos-RockDoido.jpg" />
+    <p class="heading">
+        <i>Rock Doido</i> by Gaby Amarantos
+    </p>
+    <p class="subheading">#27</p>
 
-<p>What a trip!!! At 22 songs but only 37 minutes, this album plays out like an assault of nonstop hits that celebrate Brazilian dance music. However, its international influences and callbacks are reminiscent of an M.I.A. record - over the course of the record, there are nods to brega, reggaeton, Brazilian funk, Western popular music, and even Arabian music to some extent on “Short Beira Cu.” Listening to it from start to finish feels like the most fun it’s possible to have.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/GabyAmarantos-RockDoido.jpg" />
+    </div>
 
+    <div class="review">
+        <p>What a trip!!! At 22 songs but only 37 minutes, this album plays out like an assault of nonstop hits that celebrate Brazilian dance music. However, its international influences and callbacks are reminiscent of an M.I.A. record - over the course of the record, there are nods to brega, reggaeton, Brazilian funk, Western popular music, and even Arabian music to some extent on “Short Beira Cu.” Listening to it from start to finish feels like the most fun it’s possible to have.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#27">&lt; List</a></p>
+        <p><a href="../28-billywoods-GOLLIWOG">&lt; #28</a></p>
+        <p><a href="../26-McKinleyDixon-MagicAlive">#26 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

@@ -16,6 +16,19 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums</title>
     
@@ -24,6 +37,7 @@
     margin: 1em 0;
     display: flex;
     align-items: center;
+    font-family: Geneva;
   }
 
   li:nth-child(even) .excerpt {
@@ -52,10 +66,6 @@
   }
 
   @media only screen and (max-width: 540px) {
-    .window-pane {
-      font-size: 16px;
-    }
-
     .excerpt {
       flex-direction: column-reverse;
     }
@@ -101,7 +111,7 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<h1>Top 50 Albums</h1>
+<p class="heading center">Top 50 Albums</p>
 <ol reversed>
   
   
@@ -111,15 +121,17 @@
   
   
   <li class="album" id="50">
-    <a href="/top50/50-DutchInterior-Moneyball/">Moneyball by Dutch Interior</a>
+    <a href="/top50/50-DutchInterior-Moneyball/">
+      <i>Moneyball</i> by Dutch Interior
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>An incredibly warm effort that combines slowcore and Americana to stunning effect. The subdued performances on much of the record allow for its gorgeous textures to shine through.</p>
 
-        
+        <a href="/top50/50-DutchInterior-Moneyball/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/DutchInterior-Moneyball.jpg" alt="Moneyball cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/DutchInterior-Moneyball.jpg" alt="Moneyball cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -128,15 +140,17 @@
   
   
   <li class="album" id="49">
-    <a href="/top50/49-JohnGlacier-LikeaRibbon/">Like a Ribbon by John Glacier</a>
+    <a href="/top50/49-JohnGlacier-LikeaRibbon/">
+      <i>Like a Ribbon</i> by John Glacier
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Amidst her stoic, deadpan rapping style, John Glacier’s debut sees her unflappably tackle a myriad of soundscapes while documenting her own personal and musical growth.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/JohnGlacier-LikeaRibbon.png" alt="Like a Ribbon cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/JohnGlacier-LikeaRibbon.png" alt="Like a Ribbon cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -145,15 +159,17 @@
   
   
   <li class="album" id="48">
-    <a href="/top50/48-AsherWhite-8TipsforCatastropheLiving/">8 Tips for Catastrophe Living by Asher White</a>
+    <a href="/top50/48-AsherWhite-8TipsforCatastropheLiving/">
+      <i>8 Tips for Catastrophe Living</i> by Asher White
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>From post-rock to folk to electronic music, Asher White dabbles in a bit of everything as she processes romantic strife. The results are virtuosic, but have a bit of humor and playfulness as well.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/AsherWhite-8TipsforCatastropheLiving.jpg" alt="8 Tips for Catastrophe Living cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/AsherWhite-8TipsforCatastropheLiving.jpg" alt="8 Tips for Catastrophe Living cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -162,15 +178,17 @@
   
   
   <li class="album" id="47">
-    <a href="/top50/47-ShinseiKamattechan-DanchiThesis/">Danchi Thesis by Shinsei Kamattechan</a>
+    <a href="/top50/47-ShinseiKamattechan-DanchiThesis/">
+      <i>Danchi Thesis</i> by Shinsei Kamattechan
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Bursting with frenetic energy, <em>Danchi Thesis</em> is genuinely one of the zaniest records I listened to in 2025, combining high-energy J-rock with indietronica and occasional string arrangements.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/ShinseiKamattechan-DanchiThesis.jpg" alt="Danchi Thesis cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/ShinseiKamattechan-DanchiThesis.jpg" alt="Danchi Thesis cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -179,15 +197,17 @@
   
   
   <li class="album" id="46">
-    <a href="/top50/46-SudanArchives-THEBPM/">THE BPM by Sudan Archives</a>
+    <a href="/top50/46-SudanArchives-THEBPM/">
+      <i>THE BPM</i> by Sudan Archives
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>On her expansive follow-up to 2023’s <em>Natural Brown Prom Queen,</em> Sudan Archives continues her relentless musical exploration and pop prowess  as she documents love, ambition, and daily anxieties.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/SudanArchives-THEBPM.jpg" alt="THE BPM cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/SudanArchives-THEBPM.jpg" alt="THE BPM cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -196,15 +216,17 @@
   
   
   <li class="album" id="45">
-    <a href="/top50/45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName/">Every Video Without Your Face, Every Sound Without Your Name by Lucy Liyou</a>
+    <a href="/top50/45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName/">
+      <i>Every Video Without Your Face, Every Sound Without Your Name</i> by Lucy Liyou
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A set of haunting, austere songs led by piano and vocals that interrogates the aftermath of relationships and familial trauma. While making use of space and silence in the recordings to build emotion, many tracks also reach spellbinding peaks through ambient synths.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName.jpg" alt="Every Video Without Your Face, Every Sound Without Your Name cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName.jpg" alt="Every Video Without Your Face, Every Sound Without Your Name cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -213,15 +235,17 @@
   
   
   <li class="album" id="44">
-    <a href="/top50/44-AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles/">Alan Sparhawk with Trampled By Turtles by Alan Sparhawk &amp; Trampled By Turtles</a>
+    <a href="/top50/44-AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles/">
+      <i>Alan Sparhawk with Trampled By Turtles</i> by Alan Sparhawk &amp; Trampled By Turtles
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Grief-stricken but hopeful, <em>With Trampled By Turtles</em> is a set of musical gut-punches. The instrumentation provided by bluegrass band Trampled By Turtles is a perfect, warm backdrop for these tracks that see Alan Sparhawk process the loss of his partner, Mimi Parker. It’s gorgeous and vulnerable, truly mining gold from a collaboration that feels unlikely.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png" alt="Alan Sparhawk with Trampled By Turtles cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png" alt="Alan Sparhawk with Trampled By Turtles cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -230,15 +254,17 @@
   
   
   <li class="album" id="43">
-    <a href="/top50/43-Dijon-BABY/">BABY by Dijon</a>
+    <a href="/top50/43-Dijon-BABY/">
+      <i>BABY</i> by Dijon
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A maximal and collage-like record that combines the soulfulness of 90’s-2000’s silk-shirt R&amp;B with restless experimentation in a similar vein to his colleague, mk.gee. As a result, it stutters and bursts with emotion and vibrance, producing moments that can be relentlessly funky and full of pop shimmer - in a way, like a 21st century Prince. The whole project is stellar, but “Yamaha” in particular is a tune that I would love to shout from the rooftops.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Dijon-BABY.jpg" alt="BABY cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Dijon-BABY.jpg" alt="BABY cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -247,15 +273,17 @@
   
   
   <li class="album" id="42">
-    <a href="/top50/42-NadahElShazly-LainiTani/">Laini Tani by Nadah El Shazly</a>
+    <a href="/top50/42-NadahElShazly-LainiTani/">
+      <i>Laini Tani</i> by Nadah El Shazly
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Following the release of her 2017 debut <em>Ahwar,</em> Cairo-born Nadah El Shazly has expanded her career through film scoring. <em>Laini Tani</em> sees her finally return to recording her own music, and the results are wondrous. Combining Arab classical music melodies with electronics and dream pop, <em>Laini Tani</em> is a lush and expansive listen that almost feels trancelike.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/NadahElShazly-LainiTani.jpg" alt="Laini Tani cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/NadahElShazly-LainiTani.jpg" alt="Laini Tani cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -264,15 +292,17 @@
   
   
   <li class="album" id="41">
-    <a href="/top50/41-Titanic-HAGEN/">HAGEN by Titanic</a>
+    <a href="/top50/41-Titanic-HAGEN/">
+      <i>HAGEN</i> by Titanic
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A great release from the Mexico City duo consisting of cellist Mabe Fratti and guitarist Héctor Tosta. As a cellist myself, I have been so excited by Mabe Fratti’s career in particular, and this record was no exception. The cello serves as a grounding, earthy force on this record as the duo make songs that feel expansive and experimental, but still have a surprising degree of infectiousness.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Titanic-HAGEN.jpg" alt="HAGEN cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Titanic-HAGEN.jpg" alt="HAGEN cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -281,15 +311,17 @@
   
   
   <li class="album" id="40">
-    <a href="/top50/40-LyraPramuk-Hymnal/">Hymnal by Lyra Pramuk</a>
+    <a href="/top50/40-LyraPramuk-Hymnal/">
+      <i>Hymnal</i> by Lyra Pramuk
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>On <em>Hymnal,</em> Pramuk flexes her capability of making expansive, futuristic soundscapes with organic ingredients. There are sweeping, energetic string arrangements and the uncanny patchwork melodies that Pramuk weaves with her own voice. Overall, the sound she creates feels ancient, elemental, and futuristic at the same time.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/LyraPramuk-Hymnal.png" alt="Hymnal cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/LyraPramuk-Hymnal.png" alt="Hymnal cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -298,15 +330,17 @@
   
   
   <li class="album" id="39">
-    <a href="/top50/39-DeLaSoul-CabinintheSky/">Cabin in the Sky by De La Soul</a>
+    <a href="/top50/39-DeLaSoul-CabinintheSky/">
+      <i>Cabin in the Sky</i> by De La Soul
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Given the tragic subtext of this record following the passing of Trugoy the Dove, it was difficult to imagine how De La Soul would move forward. <em>Cabin in the Sky</em> sees the group address the loss by celebrating his life, and consequently, the project never feels particularly heavy. There are great features from both legends and newcomers that are transparently and humorously outlined by the album intro. The resulting project is one that manages to entertain the listener as De La Soul always have.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/DeLaSoul-CabinintheSky.jpg" alt="Cabin in the Sky cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/DeLaSoul-CabinintheSky.jpg" alt="Cabin in the Sky cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -315,15 +349,17 @@
   
   
   <li class="album" id="38">
-    <a href="/top50/38-LosThuthanaka-LosThuthanaka/">Los Thuthanaka by Los Thuthanaka</a>
+    <a href="/top50/38-LosThuthanaka-LosThuthanaka/">
+      <i>Los Thuthanaka</i> by Los Thuthanaka
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>What a wild ride! As acknowledged exhaustively by Pitchfork, <em>Los Thuthanaka</em> exists at a unique and special intersection of a lot of sounds. Specifically, it combines indigenous tradition and digital noise. “Phuju” is a huayño, a festive Andean dance, that is also full of noisy synths and DJ tags. “Apnaqkaya Titi” and “Awila” subvert traditional Bolivian dances with pummelling punk guitars and drums. It is the best and most dizzying kind of fusional, anticolonialist music - and it’s so maximalist that you really have to listen to it yourself to believe what’s happening.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/LosThuthanaka-LosThuthanaka.jpg" alt="Los Thuthanaka cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/LosThuthanaka-LosThuthanaka.jpg" alt="Los Thuthanaka cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -332,15 +368,17 @@
   
   
   <li class="album" id="37">
-    <a href="/top50/37-Horsegirl-PhoneticsOnandOn/">Phonetics On and On by Horsegirl</a>
+    <a href="/top50/37-Horsegirl-PhoneticsOnandOn/">
+      <i>Phonetics On and On</i> by Horsegirl
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A wiry, infectious record that sees Horsegirl do a lot with a relatively subdued sound. Band members Penelope Lowenstein and Nora Cheng charmingly alternate on vocal duties, giving unpretentious vocal performances that highlight the opacity of their lyrics and the spaciousness of the songs’ mixes. It’s a simple, but refreshing indie rock listen that’s also full of pop appeal and great melodies.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Horsegirl-PhoneticsOnandOn.png" alt="Phonetics On and On cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Horsegirl-PhoneticsOnandOn.png" alt="Phonetics On and On cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -349,15 +387,17 @@
   
   
   <li class="album" id="36">
-    <a href="/top50/36-Quadeca-VanisherHorizonScraper/">Vanisher, Horizon Scraper by Quadeca</a>
+    <a href="/top50/36-Quadeca-VanisherHorizonScraper/">
+      <i>Vanisher, Horizon Scraper</i> by Quadeca
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>By far Quadeca’s most ambitious project, and I would say that it was a successful experiment overall. Telling the story of a life using a sea voyage as an extended metaphor, Quadeca uses both overt visuals (via his feature film-length music video for this album) and sonic storytelling to convincingly evoke the ocean. Lots of great tracks that cover everything from folk to chamber pop to experimental rock (courtesy of Maruja), and the storytelling takes on mythical proportions.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Quadeca-VanisherHorizonScraper.jpg" alt="Vanisher, Horizon Scraper cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Quadeca-VanisherHorizonScraper.jpg" alt="Vanisher, Horizon Scraper cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -366,15 +406,17 @@
   
   
   <li class="album" id="35">
-    <a href="/top50/35-TropicalFuckStorm-FairylandCodex/">Fairyland Codex by Tropical Fuck Storm</a>
+    <a href="/top50/35-TropicalFuckStorm-FairylandCodex/">
+      <i>Fairyland Codex</i> by Tropical Fuck Storm
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Easily the darkest and most interesting Tropical Fuck Storm record yet. While tracks like opener “Irukandji Syndrome” see the band elaborate on the noise-punk sound they're known for, the rest of the tracklist goes into deeply interesting territory. I love the Nick Cave-adjacent vibes of “Goon Show,” and the impassioned vocal performances that Fiona and Erica give on later tracks like “Teeth Marché.” Very noisy, proggy, and dark.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/TropicalFuckStorm-FairylandCodex.jpg" alt="Fairyland Codex cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/TropicalFuckStorm-FairylandCodex.jpg" alt="Fairyland Codex cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -383,15 +425,17 @@
   
   
   <li class="album" id="34">
-    <a href="/top50/34-Djrum-UnderTangledSilence/">Under Tangled Silence by Djrum</a>
+    <a href="/top50/34-Djrum-UnderTangledSilence/">
+      <i>Under Tangled Silence</i> by Djrum
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Just an hour of gorgeous ambient IDM that will stop you in your tracks when you hear it. For an electronic album, though, it features some incredible acoustic orchestration - including spellbinding improvised piano, cello, harp, and mbira over electronic percussion. The overall sound is fluid, sweeping, and trance-like.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Djrum-UnderTangledSilence.jpg" alt="Under Tangled Silence cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Djrum-UnderTangledSilence.jpg" alt="Under Tangled Silence cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -400,15 +444,17 @@
   
   
   <li class="album" id="33">
-    <a href="/top50/33-NataliaLafourcade-Cancionera/">Cancionera by Natalia Lafourcade</a>
+    <a href="/top50/33-NataliaLafourcade-Cancionera/">
+      <i>Cancionera</i> by Natalia Lafourcade
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Mexican folk singer-songwriter Natalia Lafourcade has basically been on a generational run since the turn of the decade, and <em>Cancionera</em> continues the magic. With the ornate orchestration of her recent records, she has really been able to show off her uncanny sense of timing - letting her compositions breathe when needed, leading to a lot of serene instrumental stretches. It’s all the more impressive that, from what I heard, the songs were recorded in one take! From front to back, a lot of tonal ground is covered - from the lightheartedness of “Cocos en la Playa” to the eeriness of “Luna Cresciente.” This makes <em>Cancionera</em> a pretty varied listen, but make no mistake - all of it is quality!</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/NataliaLafourcade-Cancionera.jpg" alt="Cancionera cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/NataliaLafourcade-Cancionera.jpg" alt="Cancionera cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -417,15 +463,17 @@
   
   
   <li class="album" id="32">
-    <a href="/top50/32-Agriculture-TheSpiritualSound/">The Spiritual Sound by Agriculture</a>
+    <a href="/top50/32-Agriculture-TheSpiritualSound/">
+      <i>The Spiritual Sound</i> by Agriculture
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A black metal album that rips through many extremes. I wasn’t particularly knowledgeable about all of the black metal albums that were released this year, but this one’s energy and textures caused it to linger with me significantly. With a pummelling and cathartic first side and a slow-burning and spiritual second side, <em>The Spiritual Sound</em> chronicles euphoric rebirth and vibrance.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Agriculture-TheSpiritualSound.jpg" alt="The Spiritual Sound cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Agriculture-TheSpiritualSound.jpg" alt="The Spiritual Sound cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -434,15 +482,17 @@
   
   
   <li class="album" id="31">
-    <a href="/top50/31-AnnavonHausswolff-Iconoclasts/">Iconoclasts by Anna von Hausswolff</a>
+    <a href="/top50/31-AnnavonHausswolff-Iconoclasts/">
+      <i>Iconoclasts</i> by Anna von Hausswolff
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>On a project that feels nearly crushed by its own atmosphere, organist and vocalist Anna von Hausswolff tackles change and renewal. The soundscape she creates on this album is incredible and unique - there’s a presence of saxophone on the album (“The Beast”) that gives it jazz leanings. The heaviness of the organ is also expertly counterbalanced by Anna’s own buoyant vocals, and the two seem to work in perfect synergy. From start to finish, <em>Iconoclasts</em> is a work of truly epic proportions.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/AnnavonHausswolff-Iconoclasts.png" alt="Iconoclasts cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/AnnavonHausswolff-Iconoclasts.png" alt="Iconoclasts cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -451,15 +501,17 @@
   
   
   <li class="album" id="30">
-    <a href="/top50/30-HO99O9-TomorrowWeEscape/">Tomorrow We Escape by HO99O9</a>
+    <a href="/top50/30-HO99O9-TomorrowWeEscape/">
+      <i>Tomorrow We Escape</i> by HO99O9
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A gritty, sharp record that reassures us that punk rap/rap metal doesn’t always have to be a gimmick. On <em>Tomorrow We Escape,</em> the band appear comfortable with exploring all of the extremities of their sound - “Escape” sees them create a pretty overt metal track with a sweeping chorus, and “Incline” (feat. Nova Twins, Pink Siifu &amp; Yung Skrrt) is an electrifying hip hop crossover that combines hardcore hip hop with punk aggression. Elsewhere, “Target Practice” is an industrial-influenced rager that would sound right at home on a NIN record. All in all, this is just absolutely fantastic, and had me feeling very hype every time I listened to it.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/HO99O9-TomorrowWeEscape.jpg" alt="Tomorrow We Escape cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/HO99O9-TomorrowWeEscape.jpg" alt="Tomorrow We Escape cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -468,15 +520,17 @@
   
   
   <li class="album" id="29">
-    <a href="/top50/29-KingGizzardtheLizardWizard-PhantomIsland/">Phantom Island by King Gizzard &amp; the Lizard Wizard</a>
+    <a href="/top50/29-KingGizzardtheLizardWizard-PhantomIsland/">
+      <i>Phantom Island</i> by King Gizzard &amp; the Lizard Wizard
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Every time an artist I like has a 70’s revival album I always think to myself… is this peak? Is this the best music it’s possible to make? In this case, the answer just might be “yes,” because I can’t remember the last time I enjoyed a King Gizzard album <em>this</em> much. Loads of fun from front to back, and possibly the best arrangements on any KG album to date. The title track, “Deadstick,” and “Grow Wings and Fly” alone are all-timers.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg" alt="Phantom Island cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg" alt="Phantom Island cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -485,15 +539,17 @@
   
   
   <li class="album" id="28">
-    <a href="/top50/28-billywoods-GOLLIWOG/">GOLLIWOG by billy woods</a>
+    <a href="/top50/28-billywoods-GOLLIWOG/">
+      <i>GOLLIWOG</i> by billy woods
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Billy Woods and his career are proof that horrorcore, while known for its shocking and cinematic elements, is also a great medium for retelling terrors of our own history and present. Over sonic backdrops that feel highly dissociative, Woods engages with images like being a vampire’s victim on “Misery,” and amputation on “Maquiladoras,” which he wrote in response to foundational anticolonialist Frantz Fanon. The record is one of his most atmospheric and has some of his most incisive songwriting to date.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/billywoods-GOLLIWOG.jpg" alt="GOLLIWOG cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/billywoods-GOLLIWOG.jpg" alt="GOLLIWOG cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -502,15 +558,17 @@
   
   
   <li class="album" id="27">
-    <a href="/top50/27-GabyAmarantos-RockDoido/">Rock Doido by Gaby Amarantos</a>
+    <a href="/top50/27-GabyAmarantos-RockDoido/">
+      <i>Rock Doido</i> by Gaby Amarantos
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>What a trip!!! At 22 songs but only 37 minutes, this album plays out like an assault of nonstop hits that celebrate Brazilian dance music. However, its international influences and callbacks are reminiscent of an M.I.A. record - over the course of the record, there are nods to brega, reggaeton, Brazilian funk, Western popular music, and even Arabian music to some extent on “Short Beira Cu.” Listening to it from start to finish feels like the most fun it’s possible to have.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/GabyAmarantos-RockDoido.jpg" alt="Rock Doido cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/GabyAmarantos-RockDoido.jpg" alt="Rock Doido cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -519,15 +577,17 @@
   
   
   <li class="album" id="26">
-    <a href="/top50/26-McKinleyDixon-MagicAlive/">Magic Alive&#92;! by McKinley Dixon</a>
+    <a href="/top50/26-McKinleyDixon-MagicAlive/">
+      <i>Magic Alive&#92;!</i> by McKinley Dixon
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A colorful, densely orchestrated jazz-rap album that sees McKinley Dixon continue the unbelievable run he has been on since his 2021 breakthrough. It’s an album about death: 3 kids have a friend who passes away, and they grapple with keeping his memory alive by building monuments in his memory, and bargaining to bring him back - eventually reincarnating him on “Sugar Water.” As always, the project is incredibly literary, paying homage to Toni Morrison on tracks like “Recitatif.” The features on the record are also incredibly good - all of the guest verses add a lot to the project, and I especially loved the melodic vocal performances of Anjimile and Shamir.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/McKinleyDixon-MagicAlive.jpg" alt="Magic Alive&#92;! cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/McKinleyDixon-MagicAlive.jpg" alt="Magic Alive&#92;! cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -536,15 +596,17 @@
   
   
   <li class="album" id="25">
-    <a href="/top50/25-HannahFrances-NestedinTangles/">Nested in Tangles by Hannah Frances</a>
+    <a href="/top50/25-HannahFrances-NestedinTangles/">
+      <i>Nested in Tangles</i> by Hannah Frances
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>In 2024, Hannah Frances’ grief-stricken <em>Keeper of the Shepherd</em> captivated many. This year, she has already blown it out of the water with a record that explores familial trauma and subverts folk tradition. The arrangements are dense and captivating, with touches of free jazz and experimentation coming through that harken to 70’s Joni. That being said, some of the more uncanny vocal layering (mainly on the opening title track) hints at the grandiose art pop of Julia Holter, and there is also plenty of Americana influence that brings a lot of warmth to the mix. The mixture of ideas makes for one of the most captivating singer-songwriter projects of the year.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/HannahFrances-NestedinTangles.jpg" alt="Nested in Tangles cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/HannahFrances-NestedinTangles.jpg" alt="Nested in Tangles cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -553,15 +615,17 @@
   
   
   <li class="album" id="24">
-    <a href="/top50/24-Deerhoof-NobleGodlikeinRuin/">Noble &amp; Godlike in Ruin by Deerhoof</a>
+    <a href="/top50/24-Deerhoof-NobleGodlikeinRuin/">
+      <i>Noble &amp; Godlike in Ruin</i> by Deerhoof
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>On their 20th studio album, the experimental rock veterans take inspiration from Mary Shelley’s “Frankenstein” to stitch together maximalist, dense compositions. While being as frenetic and raucous as ever, <em>Noble &amp; Godlike in Ruin</em> sees the group approach deeply interesting and existential territory - “Kingtoe” examines our relationships with machines in a very Deefhoofian way (“How can you be so human? / I heard that you were just an animal”). “Immigrant Songs” also delves into what it means to be an immigrant in Trump’s America, while having fantastic experimental passages. Altogether, this record proves that Deerhoof is just as imaginative and exciting as ever.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Deerhoof-NobleGodlikeinRuin.jpg" alt="Noble &amp; Godlike in Ruin cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Deerhoof-NobleGodlikeinRuin.jpg" alt="Noble &amp; Godlike in Ruin cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -570,15 +634,17 @@
   
   
   <li class="album" id="23">
-    <a href="/top50/23-YHWHNailgun-45Pounds/">45 Pounds by YHWH Nailgun</a>
+    <a href="/top50/23-YHWHNailgun-45Pounds/">
+      <i>45 Pounds</i> by YHWH Nailgun
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>This debut project sees the four-piece, New York-based experimental rock group create tightly organized chaos. With precise, rototom-heavy percussion and noisy, sawing synths and guitar, tracks breeze by with pummeling intensity. The vibe the group creates is equally danceable and ritualistic, and makes for some very exciting experimental rock.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/YHWHNailgun-45Pounds.png" alt="45 Pounds cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/YHWHNailgun-45Pounds.png" alt="45 Pounds cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -587,15 +653,17 @@
   
   
   <li class="album" id="22">
-    <a href="/top50/22-keiyaA-hookeslaw/">hooke’s law by keiyaA</a>
+    <a href="/top50/22-keiyaA-hookeslaw/">
+      <i>hooke’s law</i> by keiyaA
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>The best possible way to summarize the overarching theme of this record comes in words that keiyaA penned herself, saying that “a downward spiral is a loaded spring.” After the affirmational air of her debut (2020’s <em>Forever, Ya Girl)</em>, <em>hooke’s law</em> sees keiyaA embrace tension and struggle, and she emerges from the other side intact. Amidst struggles with mental health and love, the production takes on a relaxed, but experimental alternative r&amp;b sound full of crisp beats and spacey synths - with significant influence from IDM and breakbeat. The resulting album is simultaneously wise and relaxed, particularly with keiyaA’s cool melodies drifting woozily on top.</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/keiyaA-hookeslaw.png" alt="hooke’s law cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/keiyaA-hookeslaw.png" alt="hooke’s law cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -604,15 +672,17 @@
   
   
   <li class="album" id="21">
-    <a href="/top50/21-Huremic-SeekingDarkness/">Seeking Darkness by Huremic</a>
+    <a href="/top50/21-Huremic-SeekingDarkness/">
+      <i>Seeking Darkness</i> by Huremic
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>After several years of creating some of the best shoegaze in the scene, Parannoul has changed gears significantly to give us <em>Seeking Darkness</em> under his new Huremic project. Divided into five parts, this sprawling record is the artist’s foray into post-rock. Equally psychedelic and aggressive, <em>Seeking Darkness</em> exceeds any expectations, showing once again how visionary of an artist Parannoul is (and in a completely novel way).</p>
 
         
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Huremic-SeekingDarkness.jpg" alt="Seeking Darkness cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Huremic-SeekingDarkness.jpg" alt="Seeking Darkness cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -621,15 +691,17 @@
   
   
   <li class="album" id="20">
-    <a href="/top50/20-Clipse-LetGodSortEmOut/">Let God Sort Em Out by Clipse</a>
+    <a href="/top50/20-Clipse-LetGodSortEmOut/">
+      <i>Let God Sort Em Out</i> by Clipse
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>This one has been done to death in terms of discussion, but I will throw in my two cents by also corroborating that this is a really, really good comeback album. After Clipse’s initial bling-era run, it was difficult to conceptualize how this reunion could go. This became even more true when Pusha T had a career resurgence in the late 2010s. Fortunately, Clipse’s reunion resulted in possibly the most replayable, cinematic, and satisfying hip hop albums of the year - due in large part to the duo’s ability to keep things fresh on the project. Pharell’s production also does a lot of heavy lifting, perfectly complementing the content of the songs themselves.</p>
 
         <a href="/top50/20-Clipse-LetGodSortEmOut/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Clipse-LetGodSortEmOut.jpg" alt="Let God Sort Em Out cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Clipse-LetGodSortEmOut.jpg" alt="Let God Sort Em Out cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -638,15 +710,17 @@
   
   
   <li class="album" id="19">
-    <a href="/top50/19-MonLaferte-FEMMEFATALE/">FEMME FATALE by Mon Laferte</a>
+    <a href="/top50/19-MonLaferte-FEMMEFATALE/">
+      <i>FEMME FATALE</i> by Mon Laferte
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
-        <p>I have to tell you… as far as Spanish-language albums go this year, <em>FEMME FATALE</em> was for me what Rosalia’s <em>LUX</em> seems to be for everyone else. I really adore this. The high-glam vibes are immaculate right off the bat with the title track, as we are immersed in the jazzy throwback vibe of the record. The smoky, nostalgic feel of the record is occasionally disrupted by Laferte’s own idiosyncrasies - such as the autotune-laden vocals on “Mi Hombre” and the bombastic, explosive vocal performance on “Otra Noche de Llorar” (a track that completely warrants any BjÖrk comparisons it elicits).</p>
+        <p>I have to tell you… as far as Spanish-language albums go this year, <em>FEMME FATALE</em> was for me what Rosalia’s <em>LUX</em> seems to be for everyone else. I really adore this. The high-glam vibes are immaculate right off the bat with the title track, as we are immersed in the jazzy throwback vibe of the record. The smoky, nostalgic feel of the record is occasionally disrupted by Laferte’s own idiosyncrasies - such as the autotune-laden vocals on “Mi Hombre” and the bombastic, explosive vocal performance on “Otra Noche de Llorar” (a track that completely warrants any Björk comparisons it elicits).</p>
 
         <a href="/top50/19-MonLaferte-FEMMEFATALE/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/MonLaferte-FEMMEFATALE.jpg" alt="FEMME FATALE cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/MonLaferte-FEMMEFATALE.jpg" alt="FEMME FATALE cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -655,15 +729,17 @@
   
   
   <li class="album" id="18">
-    <a href="/top50/18-RibbonSkirt-BiteDown/">Bite Down by Ribbon Skirt</a>
+    <a href="/top50/18-RibbonSkirt-BiteDown/">
+      <i>Bite Down</i> by Ribbon Skirt
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>An often scathing, revealing album that’s host to my favorite indie rock/post punk-y vocal performance of the year, courtesy of Tashiina Buswa. With many tracks inspired by Buswa’s Anishinaabe heritage, she expresses a lot of righteous anguish and rage whether she’s grappling with the weight of marginalized identity, or coping with other daily struggles. Her delivery can be deadpan and almost Valley Girl-adjacent (“Off Rez”), or impassioned and punk-y (the verses of “Wrong Planet”) - but always, Ribbon Skirt feel genuine.</p>
 
         <a href="/top50/18-RibbonSkirt-BiteDown/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/RibbonSkirt-BiteDown.png" alt="Bite Down cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/RibbonSkirt-BiteDown.png" alt="Bite Down cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -672,15 +748,17 @@
   
   
   <li class="album" id="17">
-    <a href="/top50/17-MaudtheMoth-TheDistaff/">The Distaff by Maud the Moth</a>
+    <a href="/top50/17-MaudtheMoth-TheDistaff/">
+      <i>The Distaff</i> by Maud the Moth
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Few things can get me excited about music like a really good new neoclassical darkwave album. Thus, I was elated to discover Maud the Moth and her wonderful record <em>The Distaff</em> back in February. Largely led by Amaya López-Carromero’s powerful vocals and piano playing, <em>The Distaff</em> ebbs and flows between symphonic peaks, and often sounds like pure catharsis.</p>
 
         <a href="/top50/17-MaudtheMoth-TheDistaff/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/MaudtheMoth-TheDistaff.jpg" alt="The Distaff cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/MaudtheMoth-TheDistaff.jpg" alt="The Distaff cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -689,15 +767,17 @@
   
   
   <li class="album" id="16">
-    <a href="/top50/16-EikoIshibashi-Antigone/">Antigone by Eiko Ishibashi</a>
+    <a href="/top50/16-EikoIshibashi-Antigone/">
+      <i>Antigone</i> by Eiko Ishibashi
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A lush, mythical, and quietly apocalyptic album, with boundless details to unpack. Truth be told, some of the best orchestration of 2025 can be found on this album - the way she layers her vocals with recordings of traffic instructions and twisted synths on opener “October” is genius. There’s a languidity and warmth to the music that calls to mind mid-70’s Joni Mitchell when she began to experiment with jazz - with occasional interjections from Americana, such as the pedal steel-inspired accordion on “Coma.”</p>
 
         <a href="/top50/16-EikoIshibashi-Antigone/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/EikoIshibashi-Antigone.png" alt="Antigone cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/EikoIshibashi-Antigone.png" alt="Antigone cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -706,15 +786,17 @@
   
   
   <li class="album" id="15">
-    <a href="/top50/15-ElaMinus-DÍA/">DÍA by Ela Minus</a>
+    <a href="/top50/15-ElaMinus-DÍA/">
+      <i>DÍA</i> by Ela Minus
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Another record that speaks to the healing and introspective power of electronic music. <em>DÍA</em> came after a time of personal strife and uncertainty for Ela Minus after relocating during the pandemic, which is also when she began gaining traction for her debut record <em>acts of rebellion.</em> On this night-veiled follow-up, Ela looks inward while making her sound even more expansive (think Kelly Lee Owens). While hitting energetic highs, <em>DÍA</em> also rewards patient listeners with its meditative pacing - for example, during the openers “ABRIR MONTE” and “BROKEN.” The former begins with a deep, two-chord synth that lingers throughout the latter, even when the anthemic chorus is introduced and bursts with melody and color.</p>
 
         <a href="/top50/15-ElaMinus-DÍA/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/ElaMinus-DÍA.png" alt="DÍA cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/ElaMinus-DÍA.png" alt="DÍA cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -723,15 +805,17 @@
   
   
   <li class="album" id="14">
-    <a href="/top50/14-PinkPantheress-FancyThat/">Fancy That by PinkPantheress</a>
+    <a href="/top50/14-PinkPantheress-FancyThat/">
+      <i>Fancy That</i> by PinkPantheress
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>In an ideal world, this would have been the biggest album of the year. Incredible tunes and remixes (the Nia Archives remix of Illegal???), great music videos, and that iconic Tiny Desk performance… As far as I’m concerned, 2025 has been her year. While I would love to see PinkPantheress try doing a longer record at some point, it is honestly impressive how much heat she manages to pack into this record’s 20 minute runtime - “Illegal,” “Tonight,” and “Stateside” alone are some of the best songs she’s ever put out.</p>
 
         <a href="/top50/14-PinkPantheress-FancyThat/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/PinkPantheress-FancyThat.jpg" alt="Fancy That cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/PinkPantheress-FancyThat.jpg" alt="Fancy That cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -740,15 +824,17 @@
   
   
   <li class="album" id="13">
-    <a href="/top50/13-YvesJarvis-AllCylinders/">All Cylinders by Yves Jarvis</a>
+    <a href="/top50/13-YvesJarvis-AllCylinders/">
+      <i>All Cylinders</i> by Yves Jarvis
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>In my mind, Yves Jarvis has always occupied a very frenetic, “jack-of-all trades” place in experimental/indie music. He has such a knack for melody, and his whimsical sense of song structure tends to tease the listener with a great motif or melody before jumping to the next idea. Contrastingly, <em>All Cylinders</em> shows Yves Jarvis in a place of unparalleled concentration. The results are an absolute delight to the ear from front to back, as the psychedelic musician lets ideas linger for a bit longer and develop into fantastic, nostalgic tracks.</p>
 
         <a href="/top50/13-YvesJarvis-AllCylinders/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/YvesJarvis-AllCylinders.jpg" alt="All Cylinders cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/YvesJarvis-AllCylinders.jpg" alt="All Cylinders cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -757,15 +843,17 @@
   
   
   <li class="album" id="12">
-    <a href="/top50/12-Annahstasia-Tether/">Tether by Annahstasia</a>
+    <a href="/top50/12-Annahstasia-Tether/">
+      <i>Tether</i> by Annahstasia
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>A completely singular, unforgettable debut effort. Annahstasia has one of the most distinct voices I have heard in a while - it’s husky, expansive, and incredibly emotive. On this record, she manages to craft acoustic arrangements that suit her vocals perfectly. These instrumentals are highly naturalistic, but still feel detailed, flowing and swelling beautifully while still allowing Annahstasia’s vocals to completely hold the foreground.</p>
 
         <a href="/top50/12-Annahstasia-Tether/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Annahstasia-Tether.jpg" alt="Tether cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Annahstasia-Tether.jpg" alt="Tether cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -774,15 +862,17 @@
   
   
   <li class="album" id="11">
-    <a href="/top50/11-LittleSimz-Lotus/">Lotus by Little Simz</a>
+    <a href="/top50/11-LittleSimz-Lotus/">
+      <i>Lotus</i> by Little Simz
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p><em>Lotus</em> was a unique listening experience for me this year because I both loved it immediately and took time to realize just how fantastic it was. Simz has been in an interesting position career-wise since <em>Sometimes I Might Be Introvert</em> because, while being inarguably on a victory lap, she has not fully attempted to re-capture that particular album’s symphonic, larger-than-life magic. In <em>Lotus’</em> case, the rapper creates an array of moments that approach career-defining grandiosity, but in a way that feels fresh and unique.</p>
 
         <a href="/top50/11-LittleSimz-Lotus/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/LittleSimz-Lotus.jpg" alt="Lotus cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/LittleSimz-Lotus.jpg" alt="Lotus cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -791,15 +881,17 @@
   
   
   <li class="album" id="10">
-    <a href="/top50/10-Ninajirachi-ILoveMyComputer/">I Love My Computer by Ninajirachi</a>
+    <a href="/top50/10-Ninajirachi-ILoveMyComputer/">
+      <i>I Love My Computer</i> by Ninajirachi
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>2025 was an awful year to be online, and was a year where just existing on Instagram left me feeling so depressed that I eventually decided to (gradually) cut it out of my life. Even still, I felt like the very problems I thought I was avoiding by being offline were infiltrating my life as a university student - as a professor encouraged AI-editing for my senior capstone paper that I spent the entirety of the semester poring over. Further, a doomsday mentality loomed over my graduation ceremony last week, as all of us were aware that, to varying extents, we worked for degrees that may come to nothing. With this backdrop, I find it surprising how easily I swallowed the techno-optimism (or at least, observationalism) of <em>I Love My Computer.</em> But - it seems to me that Ninajirachi’s love letter to EDM and computers came at the perfect time.</p>
 
         <a href="/top50/10-Ninajirachi-ILoveMyComputer/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Ninajirachi-ILoveMyComputer.jpg" alt="I Love My Computer cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Ninajirachi-ILoveMyComputer.jpg" alt="I Love My Computer cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -808,15 +900,17 @@
   
   
   <li class="album" id="9">
-    <a href="/top50/9-ModelActriz-Pirouette/">Pirouette by Model/Actriz</a>
+    <a href="/top50/9-ModelActriz-Pirouette/">
+      <i>Pirouette</i> by Model/Actriz
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Pop music can be a complicated medium for queerness. Particularly since we presently seem to be undergoing a conservative regression - there is a very loud vacancy of queer artists who are both high profile and universally respected. In particular, Sam Smith and Lil Nas X have seen pretty significant declines in popularity. And all the while, a Mormon kid named Benson Boone is doing backflips in skintight, sparkly jumpsuits. Now, more than ever, queerness catapults straight, boring artists into superstardoms while actual queer artists struggle to reach an audience, and are sequestered to alternative spaces.</p>
 
         <a href="/top50/9-ModelActriz-Pirouette/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/ModelActriz-Pirouette.jpg" alt="Pirouette cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/ModelActriz-Pirouette.jpg" alt="Pirouette cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -825,15 +919,17 @@
   
   
   <li class="album" id="8">
-    <a href="/top50/8-SMERZ-BigCityLife/">Big City Life by SMERZ</a>
+    <a href="/top50/8-SMERZ-BigCityLife/">
+      <i>Big City Life</i> by SMERZ
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Great music. Deliriously lobotomized. “My IQ low and my shoe heels high.” But also… it’s so hypnotic? So psychedelic? I could melt into the shuffling, trip hop-flavored backing track of “But I do” for hours. Not a single track feels long enough, including the 5-minute “You got time and I got money.” That being said, I find it difficult to write about why this album works so well, because a lot of the appeal is just the vibe it exudes, making it feel immune to intellectualization.</p>
 
         <a href="/top50/8-SMERZ-BigCityLife/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/SMERZ-BigCityLife.jpg" alt="Big City Life cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/SMERZ-BigCityLife.jpg" alt="Big City Life cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -842,15 +938,17 @@
   
   
   <li class="album" id="7">
-    <a href="/top50/7-SPELLLING-PortraitofmyHeart/">Portrait of my Heart by SPELLLING</a>
+    <a href="/top50/7-SPELLLING-PortraitofmyHeart/">
+      <i>Portrait of my Heart</i> by SPELLLING
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>For many people who follow music even a little closely, the release of <em>The Turning Wheel</em> in the Summer of 2021 was a pretty rapturous moment. Equally symphonic and mysterious, it was a record full of meticulously crafted arrangements, lyrics that were both whimsical and revealing, and Chrystia Cabral’s emotive, distinct voice. Additionally, the record had the most complex and rewarding melodies I had heard in pop music in a long while - see the chameleonic and genius chorus of opener “Little Deer.” So… what does one do after making such a painstakingly gorgeous, and unfathomably difficult-to-make album?</p>
 
         <a href="/top50/7-SPELLLING-PortraitofmyHeart/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/SPELLLING-PortraitofmyHeart.jpg" alt="Portrait of my Heart cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/SPELLLING-PortraitofmyHeart.jpg" alt="Portrait of my Heart cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -859,15 +957,17 @@
   
   
   <li class="album" id="6">
-    <a href="/top50/6-Geese-GettingKilled/">Getting Killed by Geese</a>
+    <a href="/top50/6-Geese-GettingKilled/">
+      <i>Getting Killed</i> by Geese
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>2025 may have been the year of good sophomore releases - if I’m not mistaken, they make up about half of my top 10! But the fact that Geese spiritually (if not literally) had <em>the</em> sophomore album of 2025 is not lost on anyone. After bursting onto the scene in 2023 with their breakout effort <em>3D Country</em>, raising rumors that they were going to bring back “real” rock ‘n’ roll, <em>Getting Killed</em> saw them explode to legendary proportions in one of the most universal and well-deserved hype trains of recent memory.</p>
 
         <a href="/top50/6-Geese-GettingKilled/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/Geese-GettingKilled.jpg" alt="Getting Killed cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/Geese-GettingKilled.jpg" alt="Getting Killed cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -876,15 +976,17 @@
   
   
   <li class="album" id="5">
-    <a href="/top50/5-InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears/">A City Drowned in God’s Black Tears by Infinity Knives &amp; Brian Ennals</a>
+    <a href="/top50/5-InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears/">
+      <i>A City Drowned in God’s Black Tears</i> by Infinity Knives &amp; Brian Ennals
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Between this one and another record later in the top 5, 2025 has been a great year for Baltimore. On this record, my first exposure to both Infinity Knives (producer) and Brian Ennals (rapper), the duo slid seamlessly between different styles and headspaces to make a truly holistic, awestriking hip hop experience.</p>
 
         <a href="/top50/5-InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears.jpg" alt="A City Drowned in God’s Black Tears cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears.jpg" alt="A City Drowned in God’s Black Tears cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -893,15 +995,17 @@
   
   
   <li class="album" id="4">
-    <a href="/top50/4-JaneRemover-Revengeseekerz/">Revengeseekerz by Jane Remover</a>
+    <a href="/top50/4-JaneRemover-Revengeseekerz/">
+      <i>Revengeseekerz</i> by Jane Remover
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>The fact that Jane Remover is one of the most recognizable names in experimental music merely 3 albums into their career is known by nearly everyone at this point. However, until <em>Revengeseekerz</em> came out this Spring, I don’t know if any of us knew they could rage <em>this</em> hard. Largely leaving behind the shoegaze-y sound of 2023’s <em>Census Designated, Revengeseekerz</em> sees the artist fully embrace rage, while giving it a spin that only they could give it.</p>
 
         <a href="/top50/4-JaneRemover-Revengeseekerz/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/JaneRemover-Revengeseekerz.jpg" alt="Revengeseekerz cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/JaneRemover-Revengeseekerz.jpg" alt="Revengeseekerz cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -910,15 +1014,17 @@
   
   
   <li class="album" id="3">
-    <a href="/top50/3-aya-hexed/">hexed&#92;! by aya</a>
+    <a href="/top50/3-aya-hexed/">
+      <i>hexed&#92;!</i> by aya
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>For most of the 2020s so far, most of the most acclaimed acts and records are the ones that successfully harness and replicate the energy of a bygone era - from the pandemic-era disco craze to the 90s fascination in indie rock, all of us seem to be craving an escape to an era that is less humiliating than our own. It’s easy to get bored of nostalgia, which is why I find it so exciting when I find an album by an artist who seems to be doing something completely fresh and different. This year, that album for me was <em>hexed!,</em> by aya.</p>
 
         <a href="/top50/3-aya-hexed/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/aya-hexed.jpg" alt="hexed&#92;! cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/aya-hexed.jpg" alt="hexed&#92;! cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -927,15 +1033,17 @@
   
   
   <li class="album" id="2">
-    <a href="/top50/2-FKATwigs-Eusexua/">Eusexua by FKA Twigs</a>
+    <a href="/top50/2-FKATwigs-Eusexua/">
+      <i>Eusexua</i> by FKA Twigs
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>Eusexua as an era: the original album tracklist, along with the second version and the <em>Afterglow</em> record, has been the single best musical moment of 2025. This album stayed with me throughout the entire year - I was enamoured with the original the moment it came out, and its highlights (the title track, “Room of Fools,” “Keep It, Hold it,” and ESPECIALLY “Striptease”) soundtracked my entire year, from start to finish.</p>
 
         <a href="/top50/2-FKATwigs-Eusexua/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/FKATwigs-Eusexua.jpg" alt="Eusexua cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/FKATwigs-Eusexua.jpg" alt="Eusexua cover" loading="lazy">
       </div>
     </div>
     <hr>
@@ -944,15 +1052,17 @@
   
   
   <li class="album" id="1">
-    <a href="/top50/1-NourishedbyTime-ThePassionateOnes/">The Passionate Ones by Nourished by Time</a>
+    <a href="/top50/1-NourishedbyTime-ThePassionateOnes/">
+      <i>The Passionate Ones</i> by Nourished by Time
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         <p>An AOTY for Nourished By Time has been years in the making: in 2023, I absolutely loved Erotic Probiotic 2, along with last year’s Catching Chickens EP. Marcus Brown has an undeniably wistful, emotive voice, which helps him to really sell his songs about love and labor under capitalism. On <em>The Passionate Ones,</em> Brown’s pop sensibility comes to the forefront, and the result is his most immediate set of songs yet, and a jarringly perfect pop album for our times</p>
 
         <a href="/top50/1-NourishedbyTime-ThePassionateOnes/" style="color: gray;">Read more&hellip;</a>
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="/imgs/NourishedbyTime-ThePassionateOnes.png" alt="The Passionate Ones cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="/imgs/NourishedbyTime-ThePassionateOnes.png" alt="The Passionate Ones cover" loading="lazy">
       </div>
     </div>
     <hr>

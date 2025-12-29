@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Noble &amp; Godlike in Ruin</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#24">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/Deerhoof-NobleGodlikeinRuin.jpg" />
+    </div>
 
-<h1>Noble &amp; Godlike in Ruin by Deerhoof</h1>
-<img src="/imgs/Deerhoof-NobleGodlikeinRuin.jpg" />
+    <p class="heading">
+        <i>Noble &amp; Godlike in Ruin</i> by Deerhoof
+    </p>
+    <p class="subheading">#24</p>
 
-<p>On their 20th studio album, the experimental rock veterans take inspiration from Mary Shelley’s “Frankenstein” to stitch together maximalist, dense compositions. While being as frenetic and raucous as ever, <em>Noble &amp; Godlike in Ruin</em> sees the group approach deeply interesting and existential territory - “Kingtoe” examines our relationships with machines in a very Deefhoofian way (“How can you be so human? / I heard that you were just an animal”). “Immigrant Songs” also delves into what it means to be an immigrant in Trump’s America, while having fantastic experimental passages. Altogether, this record proves that Deerhoof is just as imaginative and exciting as ever.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/Deerhoof-NobleGodlikeinRuin.jpg" />
+    </div>
 
+    <div class="review">
+        <p>On their 20th studio album, the experimental rock veterans take inspiration from Mary Shelley’s “Frankenstein” to stitch together maximalist, dense compositions. While being as frenetic and raucous as ever, <em>Noble &amp; Godlike in Ruin</em> sees the group approach deeply interesting and existential territory - “Kingtoe” examines our relationships with machines in a very Deefhoofian way (“How can you be so human? / I heard that you were just an animal”). “Immigrant Songs” also delves into what it means to be an immigrant in Trump’s America, while having fantastic experimental passages. Altogether, this record proves that Deerhoof is just as imaginative and exciting as ever.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#24">&lt; List</a></p>
+        <p><a href="../25-HannahFrances-NestedinTangles">&lt; #25</a></p>
+        <p><a href="../23-YHWHNailgun-45Pounds">#23 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

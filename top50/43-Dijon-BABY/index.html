@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: BABY</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#43">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/Dijon-BABY.jpg" />
+    </div>
 
-<h1>BABY by Dijon</h1>
-<img src="/imgs/Dijon-BABY.jpg" />
+    <p class="heading">
+        <i>BABY</i> by Dijon
+    </p>
+    <p class="subheading">#43</p>
 
-<p>A maximal and collage-like record that combines the soulfulness of 90’s-2000’s silk-shirt R&amp;B with restless experimentation in a similar vein to his colleague, mk.gee. As a result, it stutters and bursts with emotion and vibrance, producing moments that can be relentlessly funky and full of pop shimmer - in a way, like a 21st century Prince. The whole project is stellar, but “Yamaha” in particular is a tune that I would love to shout from the rooftops.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/Dijon-BABY.jpg" />
+    </div>
 
+    <div class="review">
+        <p>A maximal and collage-like record that combines the soulfulness of 90’s-2000’s silk-shirt R&amp;B with restless experimentation in a similar vein to his colleague, mk.gee. As a result, it stutters and bursts with emotion and vibrance, producing moments that can be relentlessly funky and full of pop shimmer - in a way, like a 21st century Prince. The whole project is stellar, but “Yamaha” in particular is a tune that I would love to shout from the rooftops.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#43">&lt; List</a></p>
+        <p><a href="../44-AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles">&lt; #44</a></p>
+        <p><a href="../42-NadahElShazly-LainiTani">#42 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

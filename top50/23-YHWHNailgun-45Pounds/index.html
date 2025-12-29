@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: 45 Pounds</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#23">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/YHWHNailgun-45Pounds.png" />
+    </div>
 
-<h1>45 Pounds by YHWH Nailgun</h1>
-<img src="/imgs/YHWHNailgun-45Pounds.png" />
+    <p class="heading">
+        <i>45 Pounds</i> by YHWH Nailgun
+    </p>
+    <p class="subheading">#23</p>
 
-<p>This debut project sees the four-piece, New York-based experimental rock group create tightly organized chaos. With precise, rototom-heavy percussion and noisy, sawing synths and guitar, tracks breeze by with pummeling intensity. The vibe the group creates is equally danceable and ritualistic, and makes for some very exciting experimental rock.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/YHWHNailgun-45Pounds.png" />
+    </div>
 
+    <div class="review">
+        <p>This debut project sees the four-piece, New York-based experimental rock group create tightly organized chaos. With precise, rototom-heavy percussion and noisy, sawing synths and guitar, tracks breeze by with pummeling intensity. The vibe the group creates is equally danceable and ritualistic, and makes for some very exciting experimental rock.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#23">&lt; List</a></p>
+        <p><a href="../24-Deerhoof-NobleGodlikeinRuin">&lt; #24</a></p>
+        <p><a href="../22-keiyaA-hookeslaw">#22 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

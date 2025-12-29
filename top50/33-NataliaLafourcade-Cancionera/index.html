@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Cancionera</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#33">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/NataliaLafourcade-Cancionera.jpg" />
+    </div>
 
-<h1>Cancionera by Natalia Lafourcade</h1>
-<img src="/imgs/NataliaLafourcade-Cancionera.jpg" />
+    <p class="heading">
+        <i>Cancionera</i> by Natalia Lafourcade
+    </p>
+    <p class="subheading">#33</p>
 
-<p>Mexican folk singer-songwriter Natalia Lafourcade has basically been on a generational run since the turn of the decade, and <em>Cancionera</em> continues the magic. With the ornate orchestration of her recent records, she has really been able to show off her uncanny sense of timing - letting her compositions breathe when needed, leading to a lot of serene instrumental stretches. It’s all the more impressive that, from what I heard, the songs were recorded in one take! From front to back, a lot of tonal ground is covered - from the lightheartedness of “Cocos en la Playa” to the eeriness of “Luna Cresciente.” This makes <em>Cancionera</em> a pretty varied listen, but make no mistake - all of it is quality!</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/NataliaLafourcade-Cancionera.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Mexican folk singer-songwriter Natalia Lafourcade has basically been on a generational run since the turn of the decade, and <em>Cancionera</em> continues the magic. With the ornate orchestration of her recent records, she has really been able to show off her uncanny sense of timing - letting her compositions breathe when needed, leading to a lot of serene instrumental stretches. It’s all the more impressive that, from what I heard, the songs were recorded in one take! From front to back, a lot of tonal ground is covered - from the lightheartedness of “Cocos en la Playa” to the eeriness of “Luna Cresciente.” This makes <em>Cancionera</em> a pretty varied listen, but make no mistake - all of it is quality!</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#33">&lt; List</a></p>
+        <p><a href="../34-Djrum-UnderTangledSilence">&lt; #34</a></p>
+        <p><a href="../32-Agriculture-TheSpiritualSound">#32 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

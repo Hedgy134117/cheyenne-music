@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Alan Sparhawk with Trampled By Turtles</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#44">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png" />
+    </div>
 
-<h1>Alan Sparhawk with Trampled By Turtles by Alan Sparhawk &amp; Trampled By Turtles</h1>
-<img src="/imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png" />
+    <p class="heading">
+        <i>Alan Sparhawk with Trampled By Turtles</i> by Alan Sparhawk &amp; Trampled By Turtles
+    </p>
+    <p class="subheading">#44</p>
 
-<p>Grief-stricken but hopeful, <em>With Trampled By Turtles</em> is a set of musical gut-punches. The instrumentation provided by bluegrass band Trampled By Turtles is a perfect, warm backdrop for these tracks that see Alan Sparhawk process the loss of his partner, Mimi Parker. It’s gorgeous and vulnerable, truly mining gold from a collaboration that feels unlikely.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png" />
+    </div>
 
+    <div class="review">
+        <p>Grief-stricken but hopeful, <em>With Trampled By Turtles</em> is a set of musical gut-punches. The instrumentation provided by bluegrass band Trampled By Turtles is a perfect, warm backdrop for these tracks that see Alan Sparhawk process the loss of his partner, Mimi Parker. It’s gorgeous and vulnerable, truly mining gold from a collaboration that feels unlikely.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#44">&lt; List</a></p>
+        <p><a href="../45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName">&lt; #45</a></p>
+        <p><a href="../43-Dijon-BABY">#43 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

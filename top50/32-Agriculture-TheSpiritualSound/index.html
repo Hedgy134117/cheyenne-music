@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: The Spiritual Sound</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#32">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/Agriculture-TheSpiritualSound.jpg" />
+    </div>
 
-<h1>The Spiritual Sound by Agriculture</h1>
-<img src="/imgs/Agriculture-TheSpiritualSound.jpg" />
+    <p class="heading">
+        <i>The Spiritual Sound</i> by Agriculture
+    </p>
+    <p class="subheading">#32</p>
 
-<p>A black metal album that rips through many extremes. I wasn’t particularly knowledgeable about all of the black metal albums that were released this year, but this one’s energy and textures caused it to linger with me significantly. With a pummelling and cathartic first side and a slow-burning and spiritual second side, <em>The Spiritual Sound</em> chronicles euphoric rebirth and vibrance.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/Agriculture-TheSpiritualSound.jpg" />
+    </div>
 
+    <div class="review">
+        <p>A black metal album that rips through many extremes. I wasn’t particularly knowledgeable about all of the black metal albums that were released this year, but this one’s energy and textures caused it to linger with me significantly. With a pummelling and cathartic first side and a slow-burning and spiritual second side, <em>The Spiritual Sound</em> chronicles euphoric rebirth and vibrance.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#32">&lt; List</a></p>
+        <p><a href="../33-NataliaLafourcade-Cancionera">&lt; #33</a></p>
+        <p><a href="../31-AnnavonHausswolff-Iconoclasts">#31 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

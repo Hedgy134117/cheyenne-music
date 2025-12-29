@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Hymnal</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#40">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/LyraPramuk-Hymnal.png" />
+    </div>
 
-<h1>Hymnal by Lyra Pramuk</h1>
-<img src="/imgs/LyraPramuk-Hymnal.png" />
+    <p class="heading">
+        <i>Hymnal</i> by Lyra Pramuk
+    </p>
+    <p class="subheading">#40</p>
 
-<p>On <em>Hymnal,</em> Pramuk flexes her capability of making expansive, futuristic soundscapes with organic ingredients. There are sweeping, energetic string arrangements and the uncanny patchwork melodies that Pramuk weaves with her own voice. Overall, the sound she creates feels ancient, elemental, and futuristic at the same time.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/LyraPramuk-Hymnal.png" />
+    </div>
 
+    <div class="review">
+        <p>On <em>Hymnal,</em> Pramuk flexes her capability of making expansive, futuristic soundscapes with organic ingredients. There are sweeping, energetic string arrangements and the uncanny patchwork melodies that Pramuk weaves with her own voice. Overall, the sound she creates feels ancient, elemental, and futuristic at the same time.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#40">&lt; List</a></p>
+        <p><a href="../41-Titanic-HAGEN">&lt; #41</a></p>
+        <p><a href="../39-DeLaSoul-CabinintheSky">#39 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

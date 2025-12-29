@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: hexed&#92;!</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,16 +113,34 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#3">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/aya-hexed.jpg" />
+    </div>
 
-<h1>hexed&#92;! by aya</h1>
-<img src="/imgs/aya-hexed.jpg" />
+    <p class="heading">
+        <i>hexed&#92;!</i> by aya
+    </p>
+    <p class="subheading">#3</p>
 
-<p>For most of the 2020s so far, most of the most acclaimed acts and records are the ones that successfully harness and replicate the energy of a bygone era - from the pandemic-era disco craze to the 90s fascination in indie rock, all of us seem to be craving an escape to an era that is less humiliating than our own. It’s easy to get bored of nostalgia, which is why I find it so exciting when I find an album by an artist who seems to be doing something completely fresh and different. This year, that album for me was <em>hexed!,</em> by aya.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/aya-hexed.jpg" />
+    </div>
+
+    <div class="review">
+        <p>For most of the 2020s so far, most of the most acclaimed acts and records are the ones that successfully harness and replicate the energy of a bygone era - from the pandemic-era disco craze to the 90s fascination in indie rock, all of us seem to be craving an escape to an era that is less humiliating than our own. It’s easy to get bored of nostalgia, which is why I find it so exciting when I find an album by an artist who seems to be doing something completely fresh and different. This year, that album for me was <em>hexed!,</em> by aya.</p>
 <p>aya snuck onto the experimental electronic scene in 2021 with <em>im hole</em> - a record that I found particularly isolating and memorable with its psychedelic intensity and slow, amorphous pace. While that album offered a particularly decided sense of identity, <em>hexed!</em> benefits from a bit more structure, and there’s newfound accessibility in a lot of these track with club-ready beats and menacing, but sticky hooks (see “off to the ESSO,” “the names of f***** chav boys,” “droplets,” and “navel glazer”).</p>
 <p>Across the record, <em>hexed!</em> blisters with the pain of survivorship - inspired by aya’s own chastisement from growing up queer, as well as her experiences with getting sober. The lyrics are dark and scathing, with aya’s own vocal delivery ranging from chanting, to screaming, to whispering. Some lyrics express a desire for oblivion (“No more gravity/no more inertia/heat death/everything stop”), others explore nightmares through images like “vulpine features strangled with a power cord.” There are also lyrics that really powerfully capture the feeling of being “stuck” in your own trauma while the world keeps moving around you, (particularly, “I used to say some shit about a stopped clock/As the time slipped right off my hands,” which is one of my favorite bars on the album).</p>
 <p>All the while, her voice seems to be at war with the abrasive instrumentals supporting her - for example, in “heat death,” the lyrics are punctuated by 8-bit “bleeps” while a deep, industrial bassline bubbles beneath. The soundscapes are turbulent, feeling like they could explode at any moment - and when they do, they produce moments that are equally terrifying and cathartic. Amidst all of the terror on this album, whenever I returned to it, I couldn’t help but feel like everything that was going on just sounded really <em>cool</em> - it’s obvious that a lot of care went into concocting a soundscape this unhinged, and aya’s efforts were successful by all means.</p>
 
+    </div>
+
+    <div class="nav">
+        <p><a href="../#3">&lt; List</a></p>
+        <p><a href="../4-JaneRemover-Revengeseekerz">&lt; #4</a></p>
+        <p><a href="../2-FKATwigs-Eusexua">#2 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

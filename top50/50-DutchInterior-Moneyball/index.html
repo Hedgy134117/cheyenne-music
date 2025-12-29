@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Moneyball</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#50">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/DutchInterior-Moneyball.jpg" />
+    </div>
 
-<h1>Moneyball by Dutch Interior</h1>
-<img src="/imgs/DutchInterior-Moneyball.jpg" />
+    <p class="heading">
+        <i>Moneyball</i> by Dutch Interior
+    </p>
+    <p class="subheading">#50</p>
 
-<p>An incredibly warm effort that combines slowcore and Americana to stunning effect. The subdued performances on much of the record allow for its gorgeous textures to shine through.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/DutchInterior-Moneyball.jpg" />
+    </div>
 
+    <div class="review">
+        <p>An incredibly warm effort that combines slowcore and Americana to stunning effect. The subdued performances on much of the record allow for its gorgeous textures to shine through.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#50">&lt; List</a></p>
+        
+        <p><a href="../49-JohnGlacier-LikeaRibbon">#49 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

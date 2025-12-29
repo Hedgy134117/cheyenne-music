@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: DÍA</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,14 +113,32 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#15">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/ElaMinus-DÍA.png" />
+    </div>
 
-<h1>DÍA by Ela Minus</h1>
-<img src="/imgs/ElaMinus-DÍA.png" />
+    <p class="heading">
+        <i>DÍA</i> by Ela Minus
+    </p>
+    <p class="subheading">#15</p>
 
-<p>Another record that speaks to the healing and introspective power of electronic music. <em>DÍA</em> came after a time of personal strife and uncertainty for Ela Minus after relocating during the pandemic, which is also when she began gaining traction for her debut record <em>acts of rebellion.</em> On this night-veiled follow-up, Ela looks inward while making her sound even more expansive (think Kelly Lee Owens). While hitting energetic highs, <em>DÍA</em> also rewards patient listeners with its meditative pacing - for example, during the openers “ABRIR MONTE” and “BROKEN.” The former begins with a deep, two-chord synth that lingers throughout the latter, even when the anthemic chorus is introduced and bursts with melody and color.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/ElaMinus-DÍA.png" />
+    </div>
+
+    <div class="review">
+        <p>Another record that speaks to the healing and introspective power of electronic music. <em>DÍA</em> came after a time of personal strife and uncertainty for Ela Minus after relocating during the pandemic, which is also when she began gaining traction for her debut record <em>acts of rebellion.</em> On this night-veiled follow-up, Ela looks inward while making her sound even more expansive (think Kelly Lee Owens). While hitting energetic highs, <em>DÍA</em> also rewards patient listeners with its meditative pacing - for example, during the openers “ABRIR MONTE” and “BROKEN.” The former begins with a deep, two-chord synth that lingers throughout the latter, even when the anthemic chorus is introduced and bursts with melody and color.</p>
 <p>The attitude of this album is world-weary, but mostly optimistic. On “BROKEN,” she sings “I’ll keep writing melodies/To sing away the gloom/That we have succumbed to.” “QQQ” is another highlight on the record - its arpeggiated synths and rhythmic drum patterns make it feel anthemic. However, the lyrics reveal Ela’s apocalyptic emotions as she sings in Spanish, “If it’s going to be like this/Let the world end.” Her sentiments speak to the experience of attempting to heal and do better while the world seems to be slowly ending, and <em>DÍA</em> as a whole is a powerful attempt to reconcile these emotions.</p>
 
+    </div>
+
+    <div class="nav">
+        <p><a href="../#15">&lt; List</a></p>
+        <p><a href="../16-EikoIshibashi-Antigone">&lt; #16</a></p>
+        <p><a href="../14-PinkPantheress-FancyThat">#14 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

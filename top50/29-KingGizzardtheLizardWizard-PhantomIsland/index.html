@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Phantom Island</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#29">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg" />
+    </div>
 
-<h1>Phantom Island by King Gizzard &amp; the Lizard Wizard</h1>
-<img src="/imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg" />
+    <p class="heading">
+        <i>Phantom Island</i> by King Gizzard &amp; the Lizard Wizard
+    </p>
+    <p class="subheading">#29</p>
 
-<p>Every time an artist I like has a 70’s revival album I always think to myself… is this peak? Is this the best music it’s possible to make? In this case, the answer just might be “yes,” because I can’t remember the last time I enjoyed a King Gizzard album <em>this</em> much. Loads of fun from front to back, and possibly the best arrangements on any KG album to date. The title track, “Deadstick,” and “Grow Wings and Fly” alone are all-timers.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Every time an artist I like has a 70’s revival album I always think to myself… is this peak? Is this the best music it’s possible to make? In this case, the answer just might be “yes,” because I can’t remember the last time I enjoyed a King Gizzard album <em>this</em> much. Loads of fun from front to back, and possibly the best arrangements on any KG album to date. The title track, “Deadstick,” and “Grow Wings and Fly” alone are all-timers.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#29">&lt; List</a></p>
+        <p><a href="../30-HO99O9-TomorrowWeEscape">&lt; #30</a></p>
+        <p><a href="../28-billywoods-GOLLIWOG">#28 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>

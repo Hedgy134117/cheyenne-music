@@ -16,9 +16,83 @@
         body {
             overflow: hidden;
         }
+
+        .heading {
+            font-size: 3em;
+            overflow-wrap: break-word;
+        }
+
+        .subheading {
+            font-size: 2em;
+        }
+
+        .center {
+            text-align: center;
+        }
     </style>
     <title>Top 50 Albums: Cabin in the Sky</title>
     
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -39,13 +113,31 @@
         </div>
         <div class="window-pane" style="height: 100%">
             
-<p><a href="../#39">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="/imgs/DeLaSoul-CabinintheSky.jpg" />
+    </div>
 
-<h1>Cabin in the Sky by De La Soul</h1>
-<img src="/imgs/DeLaSoul-CabinintheSky.jpg" />
+    <p class="heading">
+        <i>Cabin in the Sky</i> by De La Soul
+    </p>
+    <p class="subheading">#39</p>
 
-<p>Given the tragic subtext of this record following the passing of Trugoy the Dove, it was difficult to imagine how De La Soul would move forward. <em>Cabin in the Sky</em> sees the group address the loss by celebrating his life, and consequently, the project never feels particularly heavy. There are great features from both legends and newcomers that are transparently and humorously outlined by the album intro. The resulting project is one that manages to entertain the listener as De La Soul always have.</p>
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="/imgs/DeLaSoul-CabinintheSky.jpg" />
+    </div>
 
+    <div class="review">
+        <p>Given the tragic subtext of this record following the passing of Trugoy the Dove, it was difficult to imagine how De La Soul would move forward. <em>Cabin in the Sky</em> sees the group address the loss by celebrating his life, and consequently, the project never feels particularly heavy. There are great features from both legends and newcomers that are transparently and humorously outlined by the album intro. The resulting project is one that manages to entertain the listener as De La Soul always have.</p>
+
+    </div>
+
+    <div class="nav">
+        <p><a href="../#39">&lt; List</a></p>
+        <p><a href="../40-LyraPramuk-Hymnal">&lt; #40</a></p>
+        <p><a href="../38-LosThuthanaka-LosThuthanaka">#38 &gt;</a></p>
+    </div>
+</div>
 
         </div>
     </div>
