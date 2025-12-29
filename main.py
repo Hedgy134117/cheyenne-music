@@ -66,7 +66,7 @@ def create_file(filepath: Path, frontmatter: list[str], content: list[str]) -> N
         f.writelines(content)
 
 
-def split_top_50(filename: str, path: Path) -> None:
+def split_top_50_albums(filename: str, path: Path) -> None:
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -93,16 +93,21 @@ def split_top_50(filename: str, path: Path) -> None:
                 content_lines.append("<!-- excerpt -->\n\n")
             i += 1
 
+            # Stop adding content after the last line of content for the last album
+            # (otherwise it would keep going and include honorable mentions, etc.)
+            if albums_created == 49 and lines[i] == "\n":
+                break
+
         num_paragraphs = sum([len(line.strip()) > 0 for line in content_lines])
 
         # Create frontmatter
         clean_title = clean_text(title)
         clean_artist = clean_text(artist)
 
-        prev_rank, prev_title, prev_artist = re.match(
-            r"([0-9]+)\. (.+), by (.+)", lines[i]
-        ).groups()
-        prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+        prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if prev:
+            prev_rank, prev_title, prev_artist = prev.groups()
+            prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
 
         frontmatter = [
             "layout: album.njk\n",
@@ -110,8 +115,8 @@ def split_top_50(filename: str, path: Path) -> None:
             f"title: {title}\n",
             f"artist: {artist}\n",
             f"is_short: {num_paragraphs == 2}\n",
-            f"prev: {prev if prev and albums_created < 49 else ''}\n",
-            f"next: {next_ if albums_created < 50 else ''}\n",
+            f"prev: {prev if prev else ''}\n",
+            f"next: {next_}\n",
         ]
 
         # Find image if exists
@@ -132,12 +137,52 @@ def split_top_50(filename: str, path: Path) -> None:
         albums_created += 1
 
 
+def split_top_n_other(filename: str, path: Path, divider: str) -> None:
+    with open(filename, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    prev = ""
+    next_ = ""
+    for i in range(lines.index(f"{divider}\n") + 2, len(lines)):
+        line = lines[i]
+        if not line.strip():
+            break
+
+        rank, title, artist = re.match(r"([0-9]+)\. (.+), by (.+)", line).groups()
+
+        clean_title = clean_text(title)
+        clean_artist = clean_text(artist)
+
+        prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i + 1])
+        if prev:
+            prev_rank, prev_title, prev_artist = prev.groups()
+            prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+
+        frontmatter = [
+            "layout: album.njk\n",
+            f"rank: {rank}\n",
+            f"title: {title}\n",
+            f"artist: {artist}\n",
+            f"is_short: True\n",
+            f"prev: {prev if prev else ''}\n",
+            f"next: {next_}\n",
+        ]
+
+        name = f"{rank}-{clean_artist}-{clean_title}"
+
+        next_ = name
+
+        create_file(path / f"{name}.md", frontmatter, [])
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python main.py <download|split> [start] [end]")
         sys.exit(1)
 
-    albums = get_top_50_albums("Best Music of 2025.md")
+    MAIN = "Best Music of 2025.md"
+
+    albums = get_top_50_albums(MAIN)
     command = sys.argv[1]
 
     if command == "download":
@@ -145,7 +190,19 @@ if __name__ == "__main__":
         end = int(sys.argv[3]) if len(sys.argv) > 3 else len(albums)
         download_album_art(albums[start:end])
     elif command == "split":
-        split_top_50("Best Music of 2025.md", Path("top50"))
+        # split_top_50_albums(MAIN, Path("albums"))
+        split_top_n_other(MAIN, Path("songs"), "50 Songs:")
+        # split_top_n_other(MAIN, Path("songs"), "5 EPs:")
+        # split_top_n_other(
+        #     MAIN,
+        #     Path("songs"),
+        #     "Late 2024 albums I enjoyed this year:",
+        # )
+        # split_top_n_other(
+        #     MAIN,
+        #     Path("songs"),
+        #     "Older albums that stayed with me in 2025:",
+        # )
     else:
         print(f"Unknown command: {command}")
         sys.exit(1)

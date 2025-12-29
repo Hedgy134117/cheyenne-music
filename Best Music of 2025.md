@@ -337,8 +337,8 @@ Older albums that stayed with me in 2025:
 
 1. Nunsexmonkrock, by Nina Hagen  
 2. You Must Be Certain of the Devil, by Diamanda Galas  
-3. Essra Mohawk, self titled  
-4. Eska, self titled  
+3. Essra Mohawk, by Essra Mohawk  
+4. Eska, by Eska  
 5. On How Life Is, by Macy Gray  
 6. Urban Zulu, by Busi Mhlongo  
 7. Stories to Tell, by Flora Purim  
