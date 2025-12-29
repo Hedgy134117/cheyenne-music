@@ -4,6 +4,8 @@ rank: 6
 title: Getting Killed
 artist: Geese
 is_short: False
+prev: 7-SPELLLING-PortraitofmyHeart
+next: 5-InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears
 img_url: /imgs/Geese-GettingKilled.jpg
 ---
 

@@ -4,6 +4,8 @@ rank: 35
 title: Fairyland Codex
 artist: Tropical Fuck Storm
 is_short: True
+prev: 36-Quadeca-VanisherHorizonScraper
+next: 34-Djrum-UnderTangledSilence
 img_url: /imgs/TropicalFuckStorm-FairylandCodex.jpg
 ---
 

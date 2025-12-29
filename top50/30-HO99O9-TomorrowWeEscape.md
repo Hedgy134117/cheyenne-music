@@ -4,6 +4,8 @@ rank: 30
 title: Tomorrow We Escape
 artist: HO99O9
 is_short: True
+prev: 31-AnnavonHausswolff-Iconoclasts
+next: 29-KingGizzardtheLizardWizard-PhantomIsland
 img_url: /imgs/HO99O9-TomorrowWeEscape.jpg
 ---
 

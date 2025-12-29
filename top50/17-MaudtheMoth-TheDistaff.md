@@ -4,6 +4,8 @@ rank: 17
 title: The Distaff
 artist: Maud the Moth
 is_short: False
+prev: 18-RibbonSkirt-BiteDown
+next: 16-EikoIshibashi-Antigone
 img_url: /imgs/MaudtheMoth-TheDistaff.jpg
 ---
 

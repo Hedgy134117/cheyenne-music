@@ -2,11 +2,92 @@
 
 {% block title %}Top 50 Albums: {{ title }}{% endblock %}
 
+{% block head %}
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: Geneva;
+    }
+
+    .review-img {
+        float: right;
+        margin: 0 0 1em 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-img img {
+        height: 500px;
+    }
+
+    .review-img-desktop {
+        display: block;
+    }
+
+    .review-img-mobile {
+        display: none;
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .nav p:first-child {
+        flex-grow: 1;
+    }
+
+    .nav p:last-child {
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .review-img-desktop {
+            display: none;
+        }
+
+        .review-img-mobile {
+            display: block
+        }
+
+        .review-img {
+            margin: 0 0 1em 0;
+        }
+
+        .review-img img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+{% endblock %}
+
 {% block content %}
-<p><a href="../#{{ rank }}">&lt; Back</a></p>
+<div>
+    <div class="review-img review-img-desktop standard-dialog center">
+        <img src="{{ img_url }}" />
+    </div>
 
-<h1>{{ title }} by {{ artist }}</h1>
-<img src="{{ img_url }}" />
+    <p class="heading">
+        <i>{{ title }}</i> by {{ artist }}
+    </p>
+    <p class="subheading">#{{ rank }}</p>
 
-{{ content | safe }}
+    <div class="review-img review-img-mobile standard-dialog center">
+        <img src="{{ img_url }}" />
+    </div>
+
+    <div class="review">
+        {{ content | safe }}
+    </div>
+
+    <div class="nav">
+        <p><a href="../#{{ rank }}">&lt; List</a></p>
+        {% if prev %}<p><a href="../{{ prev }}">&lt; #{{ rank + 1 }}</a></p>{% endif %}
+        {% if next %}<p><a href="../{{ next }}">#{{ rank - 1 }} &gt;</a></p>{% endif %}
+    </div>
+</div>
 {% endblock %}

@@ -4,6 +4,8 @@ rank: 8
 title: Big City Life
 artist: SMERZ
 is_short: False
+prev: 9-ModelActriz-Pirouette
+next: 7-SPELLLING-PortraitofmyHeart
 img_url: /imgs/SMERZ-BigCityLife.jpg
 ---
 

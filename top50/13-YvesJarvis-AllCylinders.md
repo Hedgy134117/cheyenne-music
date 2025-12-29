@@ -4,6 +4,8 @@ rank: 13
 title: All Cylinders
 artist: Yves Jarvis
 is_short: False
+prev: 14-PinkPantheress-FancyThat
+next: 12-Annahstasia-Tether
 img_url: /imgs/YvesJarvis-AllCylinders.jpg
 ---
 

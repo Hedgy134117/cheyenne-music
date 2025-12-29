@@ -4,6 +4,8 @@ rank: 11
 title: Lotus
 artist: Little Simz
 is_short: False
+prev: 12-Annahstasia-Tether
+next: 10-Ninajirachi-ILoveMyComputer
 img_url: /imgs/LittleSimz-Lotus.jpg
 ---
 

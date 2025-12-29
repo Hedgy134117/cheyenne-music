@@ -4,6 +4,8 @@ rank: 9
 title: Pirouette
 artist: Model/Actriz
 is_short: False
+prev: 10-Ninajirachi-ILoveMyComputer
+next: 8-SMERZ-BigCityLife
 img_url: /imgs/ModelActriz-Pirouette.jpg
 ---
 

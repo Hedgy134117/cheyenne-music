@@ -4,6 +4,8 @@ rank: 47
 title: Danchi Thesis
 artist: Shinsei Kamattechan
 is_short: True
+prev: 48-AsherWhite-8TipsforCatastropheLiving
+next: 46-SudanArchives-THEBPM
 img_url: /imgs/ShinseiKamattechan-DanchiThesis.jpg
 ---
 

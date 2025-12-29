@@ -4,6 +4,8 @@ rank: 10
 title: I Love My Computer
 artist: Ninajirachi
 is_short: False
+prev: 11-LittleSimz-Lotus
+next: 9-ModelActriz-Pirouette
 img_url: /imgs/Ninajirachi-ILoveMyComputer.jpg
 ---
 

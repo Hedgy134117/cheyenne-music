@@ -4,6 +4,8 @@ rank: 48
 title: 8 Tips for Catastrophe Living
 artist: Asher White
 is_short: True
+prev: 49-JohnGlacier-LikeaRibbon
+next: 47-ShinseiKamattechan-DanchiThesis
 img_url: /imgs/AsherWhite-8TipsforCatastropheLiving.jpg
 ---
 

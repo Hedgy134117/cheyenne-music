@@ -4,6 +4,8 @@ rank: 24
 title: Noble & Godlike in Ruin
 artist: Deerhoof
 is_short: True
+prev: 25-HannahFrances-NestedinTangles
+next: 23-YHWHNailgun-45Pounds
 img_url: /imgs/Deerhoof-NobleGodlikeinRuin.jpg
 ---
 

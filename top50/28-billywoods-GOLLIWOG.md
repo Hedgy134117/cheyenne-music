@@ -4,6 +4,8 @@ rank: 28
 title: GOLLIWOG
 artist: billy woods
 is_short: True
+prev: 29-KingGizzardtheLizardWizard-PhantomIsland
+next: 27-GabyAmarantos-RockDoido
 img_url: /imgs/billywoods-GOLLIWOG.jpg
 ---
 

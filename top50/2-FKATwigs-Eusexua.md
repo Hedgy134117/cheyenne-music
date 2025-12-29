@@ -4,6 +4,8 @@ rank: 2
 title: Eusexua
 artist: FKA Twigs 
 is_short: False
+prev: 3-aya-hexed
+next: 1-NourishedbyTime-ThePassionateOnes
 img_url: /imgs/FKATwigs-Eusexua.jpg
 ---
 

@@ -4,6 +4,8 @@ rank: 20
 title: Let God Sort Em Out
 artist: Clipse
 is_short: False
+prev: 21-Huremic-SeekingDarkness
+next: 19-MonLaferte-FEMMEFATALE
 img_url: /imgs/Clipse-LetGodSortEmOut.jpg
 ---
 

@@ -4,6 +4,8 @@ rank: 29
 title: Phantom Island
 artist: King Gizzard & the Lizard Wizard
 is_short: True
+prev: 30-HO99O9-TomorrowWeEscape
+next: 28-billywoods-GOLLIWOG
 img_url: /imgs/KingGizzardtheLizardWizard-PhantomIsland.jpg
 ---
 

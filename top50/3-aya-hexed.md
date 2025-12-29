@@ -4,6 +4,8 @@ rank: 3
 title: hexed\!
 artist: aya
 is_short: False
+prev: 4-JaneRemover-Revengeseekerz
+next: 2-FKATwigs-Eusexua
 img_url: /imgs/aya-hexed.jpg
 ---
 

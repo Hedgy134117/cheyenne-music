@@ -4,6 +4,8 @@ rank: 49
 title: Like a Ribbon
 artist: John Glacier
 is_short: True
+prev: 50-DutchInterior-Moneyball
+next: 48-AsherWhite-8TipsforCatastropheLiving
 img_url: /imgs/JohnGlacier-LikeaRibbon.png
 ---
 

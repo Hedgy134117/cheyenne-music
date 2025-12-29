@@ -4,6 +4,8 @@ rank: 25
 title: Nested in Tangles
 artist: Hannah Frances
 is_short: True
+prev: 26-McKinleyDixon-MagicAlive
+next: 24-Deerhoof-NobleGodlikeinRuin
 img_url: /imgs/HannahFrances-NestedinTangles.jpg
 ---
 

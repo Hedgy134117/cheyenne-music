@@ -4,6 +4,8 @@ rank: 33
 title: Cancionera
 artist: Natalia Lafourcade
 is_short: True
+prev: 34-Djrum-UnderTangledSilence
+next: 32-Agriculture-TheSpiritualSound
 img_url: /imgs/NataliaLafourcade-Cancionera.jpg
 ---
 

@@ -4,6 +4,8 @@ rank: 15
 title: DÍA
 artist: Ela Minus
 is_short: False
+prev: 16-EikoIshibashi-Antigone
+next: 14-PinkPantheress-FancyThat
 img_url: /imgs/ElaMinus-DÍA.png
 ---
 

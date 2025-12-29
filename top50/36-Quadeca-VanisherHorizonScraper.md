@@ -4,6 +4,8 @@ rank: 36
 title: Vanisher, Horizon Scraper
 artist: Quadeca
 is_short: True
+prev: 37-Horsegirl-PhoneticsOnandOn
+next: 35-TropicalFuckStorm-FairylandCodex
 img_url: /imgs/Quadeca-VanisherHorizonScraper.jpg
 ---
 

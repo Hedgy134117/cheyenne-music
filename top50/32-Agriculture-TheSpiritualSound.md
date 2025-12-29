@@ -4,6 +4,8 @@ rank: 32
 title: The Spiritual Sound
 artist: Agriculture
 is_short: True
+prev: 33-NataliaLafourcade-Cancionera
+next: 31-AnnavonHausswolff-Iconoclasts
 img_url: /imgs/Agriculture-TheSpiritualSound.jpg
 ---
 

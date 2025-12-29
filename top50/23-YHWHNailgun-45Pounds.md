@@ -4,6 +4,8 @@ rank: 23
 title: 45 Pounds
 artist: YHWH Nailgun
 is_short: True
+prev: 24-Deerhoof-NobleGodlikeinRuin
+next: 22-keiyaA-hookeslaw
 img_url: /imgs/YHWHNailgun-45Pounds.png
 ---
 

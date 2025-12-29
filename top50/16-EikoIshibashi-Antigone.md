@@ -4,6 +4,8 @@ rank: 16
 title: Antigone
 artist: Eiko Ishibashi
 is_short: False
+prev: 17-MaudtheMoth-TheDistaff
+next: 15-ElaMinus-DÍA
 img_url: /imgs/EikoIshibashi-Antigone.png
 ---
 

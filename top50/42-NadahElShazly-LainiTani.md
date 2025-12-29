@@ -4,6 +4,8 @@ rank: 42
 title: Laini Tani
 artist: Nadah El Shazly
 is_short: True
+prev: 43-Dijon-BABY
+next: 41-Titanic-HAGEN
 img_url: /imgs/NadahElShazly-LainiTani.jpg
 ---
 

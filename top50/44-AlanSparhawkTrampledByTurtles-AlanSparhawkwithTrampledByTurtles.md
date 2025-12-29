@@ -4,6 +4,8 @@ rank: 44
 title: Alan Sparhawk with Trampled By Turtles
 artist: Alan Sparhawk & Trampled By Turtles
 is_short: True
+prev: 45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName
+next: 43-Dijon-BABY
 img_url: /imgs/AlanSparhawkTrampledByTurtles-AlanSparhawkwithTrampledByTurtles.png
 ---
 

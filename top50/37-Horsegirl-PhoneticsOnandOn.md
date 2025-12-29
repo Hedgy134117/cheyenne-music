@@ -4,6 +4,8 @@ rank: 37
 title: Phonetics On and On
 artist: Horsegirl
 is_short: True
+prev: 38-LosThuthanaka-LosThuthanaka
+next: 36-Quadeca-VanisherHorizonScraper
 img_url: /imgs/Horsegirl-PhoneticsOnandOn.png
 ---
 

@@ -4,6 +4,8 @@ rank: 40
 title: Hymnal
 artist: Lyra Pramuk
 is_short: True
+prev: 41-Titanic-HAGEN
+next: 39-DeLaSoul-CabinintheSky
 img_url: /imgs/LyraPramuk-Hymnal.png
 ---
 

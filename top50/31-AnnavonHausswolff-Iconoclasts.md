@@ -4,6 +4,8 @@ rank: 31
 title: Iconoclasts
 artist: Anna von Hausswolff
 is_short: True
+prev: 32-Agriculture-TheSpiritualSound
+next: 30-HO99O9-TomorrowWeEscape
 img_url: /imgs/AnnavonHausswolff-Iconoclasts.png
 ---
 

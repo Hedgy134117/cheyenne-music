@@ -4,6 +4,8 @@ rank: 21
 title: Seeking Darkness
 artist: Huremic
 is_short: True
+prev: 22-keiyaA-hookeslaw
+next: 20-Clipse-LetGodSortEmOut
 img_url: /imgs/Huremic-SeekingDarkness.jpg
 ---
 

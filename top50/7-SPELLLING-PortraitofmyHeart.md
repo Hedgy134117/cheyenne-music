@@ -4,6 +4,8 @@ rank: 7
 title: Portrait of my Heart
 artist: SPELLLING
 is_short: False
+prev: 8-SMERZ-BigCityLife
+next: 6-Geese-GettingKilled
 img_url: /imgs/SPELLLING-PortraitofmyHeart.jpg
 ---
 

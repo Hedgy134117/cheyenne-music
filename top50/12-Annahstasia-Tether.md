@@ -4,6 +4,8 @@ rank: 12
 title: Tether
 artist: Annahstasia
 is_short: False
+prev: 13-YvesJarvis-AllCylinders
+next: 11-LittleSimz-Lotus
 img_url: /imgs/Annahstasia-Tether.jpg
 ---
 

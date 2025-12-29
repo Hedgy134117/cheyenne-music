@@ -4,6 +4,8 @@ rank: 18
 title: Bite Down
 artist: Ribbon Skirt
 is_short: False
+prev: 19-MonLaferte-FEMMEFATALE
+next: 17-MaudtheMoth-TheDistaff
 img_url: /imgs/RibbonSkirt-BiteDown.png
 ---
 

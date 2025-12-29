@@ -4,10 +4,12 @@ rank: 19
 title: FEMME FATALE
 artist: Mon Laferte
 is_short: False
+prev: 20-Clipse-LetGodSortEmOut
+next: 18-RibbonSkirt-BiteDown
 img_url: /imgs/MonLaferte-FEMMEFATALE.jpg
 ---
 
-I have to tell you… as far as Spanish-language albums go this year, *FEMME FATALE* was for me what Rosalia’s *LUX* seems to be for everyone else. I really adore this. The high-glam vibes are immaculate right off the bat with the title track, as we are immersed in the jazzy throwback vibe of the record. The smoky, nostalgic feel of the record is occasionally disrupted by Laferte’s own idiosyncrasies \- such as the autotune-laden vocals on “Mi Hombre” and the bombastic, explosive vocal performance on “Otra Noche de Llorar” (a track that completely warrants any BjÖrk comparisons it elicits).  
+I have to tell you… as far as Spanish-language albums go this year, *FEMME FATALE* was for me what Rosalia’s *LUX* seems to be for everyone else. I really adore this. The high-glam vibes are immaculate right off the bat with the title track, as we are immersed in the jazzy throwback vibe of the record. The smoky, nostalgic feel of the record is occasionally disrupted by Laferte’s own idiosyncrasies \- such as the autotune-laden vocals on “Mi Hombre” and the bombastic, explosive vocal performance on “Otra Noche de Llorar” (a track that completely warrants any Björk comparisons it elicits).  
 
 <!-- excerpt -->
 

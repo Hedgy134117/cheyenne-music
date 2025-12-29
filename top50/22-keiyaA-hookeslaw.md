@@ -4,6 +4,8 @@ rank: 22
 title: hooke’s law
 artist: keiyaA
 is_short: True
+prev: 23-YHWHNailgun-45Pounds
+next: 21-Huremic-SeekingDarkness
 img_url: /imgs/keiyaA-hookeslaw.png
 ---
 

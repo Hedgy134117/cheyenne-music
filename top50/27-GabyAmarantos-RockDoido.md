@@ -4,6 +4,8 @@ rank: 27
 title: Rock Doido
 artist: Gaby Amarantos
 is_short: True
+prev: 28-billywoods-GOLLIWOG
+next: 26-McKinleyDixon-MagicAlive
 img_url: /imgs/GabyAmarantos-RockDoido.jpg
 ---
 

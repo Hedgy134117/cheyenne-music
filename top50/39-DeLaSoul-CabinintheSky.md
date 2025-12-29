@@ -4,6 +4,8 @@ rank: 39
 title: Cabin in the Sky
 artist: De La Soul
 is_short: True
+prev: 40-LyraPramuk-Hymnal
+next: 38-LosThuthanaka-LosThuthanaka
 img_url: /imgs/DeLaSoul-CabinintheSky.jpg
 ---
 

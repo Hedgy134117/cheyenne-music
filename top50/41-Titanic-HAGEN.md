@@ -4,6 +4,8 @@ rank: 41
 title: HAGEN
 artist: Titanic
 is_short: True
+prev: 42-NadahElShazly-LainiTani
+next: 40-LyraPramuk-Hymnal
 img_url: /imgs/Titanic-HAGEN.jpg
 ---
 

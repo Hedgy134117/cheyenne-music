@@ -73,6 +73,8 @@ def split_top_50(filename: str, path: Path) -> None:
     albums_created = 0
     i = 0
 
+    prev = ""
+    next_ = ""
     while i < len(lines) and albums_created < 50:
         # Find next album header
         header_match = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
@@ -97,12 +99,19 @@ def split_top_50(filename: str, path: Path) -> None:
         clean_title = clean_text(title)
         clean_artist = clean_text(artist)
 
+        prev_rank, prev_title, prev_artist = re.match(
+            r"([0-9]+)\. (.+), by (.+)", lines[i]
+        ).groups()
+        prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+
         frontmatter = [
             "layout: album.njk\n",
             f"rank: {rank}\n",
             f"title: {title}\n",
             f"artist: {artist}\n",
             f"is_short: {num_paragraphs == 2}\n",
+            f"prev: {prev if prev and albums_created < 49 else ''}\n",
+            f"next: {next_ if albums_created < 50 else ''}\n",
         ]
 
         # Find image if exists
@@ -110,11 +119,15 @@ def split_top_50(filename: str, path: Path) -> None:
         if img_files:
             frontmatter.append(f"img_url: /imgs/{img_files[0].name}\n")
 
+        name = f"{rank}-{clean_artist}-{clean_title}"
+
         create_file(
-            path / f"{rank}-{clean_artist}-{clean_title}.md",
+            path / f"{name}.md",
             frontmatter,
             content_lines,
         )
+
+        next_ = name
 
         albums_created += 1
 

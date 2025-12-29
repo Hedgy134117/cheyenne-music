@@ -4,6 +4,8 @@ rank: 5
 title: A City Drowned in God’s Black Tears
 artist: Infinity Knives & Brian Ennals
 is_short: False
+prev: 6-Geese-GettingKilled
+next: 4-JaneRemover-Revengeseekerz
 img_url: /imgs/InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears.jpg
 ---
 

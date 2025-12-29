@@ -4,6 +4,8 @@ rank: 4
 title: Revengeseekerz
 artist: Jane Remover
 is_short: False
+prev: 5-InfinityKnivesBrianEnnals-ACityDrownedinGodsBlackTears
+next: 3-aya-hexed
 img_url: /imgs/JaneRemover-Revengeseekerz.jpg
 ---
 

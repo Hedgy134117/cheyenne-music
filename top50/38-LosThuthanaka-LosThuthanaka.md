@@ -4,6 +4,8 @@ rank: 38
 title: Los Thuthanaka
 artist: Los Thuthanaka
 is_short: True
+prev: 39-DeLaSoul-CabinintheSky
+next: 37-Horsegirl-PhoneticsOnandOn
 img_url: /imgs/LosThuthanaka-LosThuthanaka.jpg
 ---
 

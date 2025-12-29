@@ -4,6 +4,8 @@ rank: 14
 title: Fancy That
 artist: PinkPantheress
 is_short: False
+prev: 15-ElaMinus-DÍA
+next: 13-YvesJarvis-AllCylinders
 img_url: /imgs/PinkPantheress-FancyThat.jpg
 ---
 

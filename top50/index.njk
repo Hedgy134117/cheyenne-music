@@ -8,6 +8,7 @@
     margin: 1em 0;
     display: flex;
     align-items: center;
+    font-family: Geneva;
   }
 
   li:nth-child(even) .excerpt {
@@ -36,10 +37,6 @@
   }
 
   @media only screen and (max-width: 540px) {
-    .window-pane {
-      font-size: 16px;
-    }
-
     .excerpt {
       flex-direction: column-reverse;
     }
@@ -67,21 +64,23 @@
 {% endblock %}
 
 {% block content %}
-<h1>Top 50 Albums</h1>
+<p class="heading center">Top 50 Albums</p>
 <ol reversed>
   {% set sortedAlbums = collections.all | sort(true, false, attribute="data.rank") %}
   {% for album in sortedAlbums %}
   {% if '/top50/' in album.url and album.url != page.url %}
   <li class="album" id="{{ album.data.rank }}">
-    <a href="{{ album.url }}">{{ album.data.title }} by {{ album.data.artist }}</a>
+    <a href="{{ album.url }}">
+      <i>{{ album.data.title }}</i> by {{ album.data.artist }}
+    </a>
     <div class="excerpt">
       <div class="excerpt-content">
         {{ album.page.excerpt | markdown | safe }}
         {% if not album.data.is_short %}<a href="{{ album.url }}" style="color: gray;">Read more&hellip;</a>{%
         endif %}
       </div>
-      <div class="standard-dialog center scale-down excerpt-img">
-        <img src="{{ album.data.img_url }}" alt="{{ album.data.title }} cover">
+      <div class="standard-dialog center excerpt-img">
+        <img src="{{ album.data.img_url }}" alt="{{ album.data.title }} cover" loading="lazy">
       </div>
     </div>
     <hr>

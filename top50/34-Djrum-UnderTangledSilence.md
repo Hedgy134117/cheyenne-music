@@ -4,6 +4,8 @@ rank: 34
 title: Under Tangled Silence
 artist: Djrum
 is_short: True
+prev: 35-TropicalFuckStorm-FairylandCodex
+next: 33-NataliaLafourcade-Cancionera
 img_url: /imgs/Djrum-UnderTangledSilence.jpg
 ---
 

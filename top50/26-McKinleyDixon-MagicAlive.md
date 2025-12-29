@@ -4,6 +4,8 @@ rank: 26
 title: Magic Alive\!
 artist: McKinley Dixon
 is_short: True
+prev: 27-GabyAmarantos-RockDoido
+next: 25-HannahFrances-NestedinTangles
 img_url: /imgs/McKinleyDixon-MagicAlive.jpg
 ---
 

@@ -4,6 +4,8 @@ rank: 1
 title: The Passionate Ones
 artist: Nourished by Time
 is_short: False
+prev: 2-FKATwigs-Eusexua
+next: 
 img_url: /imgs/NourishedbyTime-ThePassionateOnes.png
 ---
 

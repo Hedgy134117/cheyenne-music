@@ -4,6 +4,8 @@ rank: 46
 title: THE BPM
 artist: Sudan Archives
 is_short: True
+prev: 47-ShinseiKamattechan-DanchiThesis
+next: 45-LucyLiyou-EveryVideoWithoutYourFaceEverySoundWithoutYourName
 img_url: /imgs/SudanArchives-THEBPM.jpg
 ---
 
