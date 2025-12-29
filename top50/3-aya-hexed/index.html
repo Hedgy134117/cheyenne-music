@@ -53,10 +53,6 @@
         height: 500px;
     }
 
-    .review-img-desktop {
-        display: block;
-    }
-
     .review-img-mobile {
         display: none;
     }
@@ -79,11 +75,14 @@
         }
 
         .review-img-mobile {
-            display: block
+            display: flex;
         }
 
         .review-img {
+            float: right;
             margin: 0 0 1em 0;
+            align-items: center;
+            justify-content: center;
         }
 
         .review-img img {
@@ -119,7 +118,7 @@
     </div>
 
     <p class="heading">
-        <i>hexed&#92;!</i> by aya
+        <i>hexed!</i> by aya
     </p>
     <p class="subheading">#3</p>
 
