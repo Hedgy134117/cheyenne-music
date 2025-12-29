@@ -4,6 +4,8 @@ const md = new markdownIt();
 export default async function (eleventyConfig) {
     // Copy the imgs directory to the output
     eleventyConfig.addPassthroughCopy("imgs");
+    // Copy the fonts directory to the output
+    eleventyConfig.addPassthroughCopy("fonts");
 
     eleventyConfig.setFrontMatterParsingOptions({
         excerpt: true,

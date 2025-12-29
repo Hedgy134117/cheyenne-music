@@ -3,7 +3,7 @@ layout: album.njk
 rank: 50
 title: Moneyball
 artist: Dutch Interior
-is_short: False
+is_short: True
 prev: 
 next: 49-JohnGlacier-LikeaRibbon
 img_url: /imgs/DutchInterior-Moneyball.jpg
