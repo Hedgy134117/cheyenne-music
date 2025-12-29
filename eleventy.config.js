@@ -19,5 +19,9 @@ export default async function (eleventyConfig) {
         return md.render(content);
     })
 
+    eleventyConfig.addFilter("markdownin", content => {
+        return md.renderInline(content);
+    })
+
     eleventyConfig.addPlugin(HtmlBasePlugin);
 };

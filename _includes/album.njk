@@ -24,10 +24,6 @@
         height: 500px;
     }
 
-    .review-img-desktop {
-        display: block;
-    }
-
     .review-img-mobile {
         display: none;
     }
@@ -50,11 +46,14 @@
         }
 
         .review-img-mobile {
-            display: block
+            display: flex;
         }
 
         .review-img {
+            float: right;
             margin: 0 0 1em 0;
+            align-items: center;
+            justify-content: center;
         }
 
         .review-img img {
@@ -72,7 +71,7 @@
     </div>
 
     <p class="heading">
-        <i>{{ title }}</i> by {{ artist }}
+        <i>{{ title | markdownin | safe }}</i> by {{ artist | markdownin | safe }}
     </p>
     <p class="subheading">#{{ rank }}</p>
 
