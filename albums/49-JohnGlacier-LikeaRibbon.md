@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 49
 title: Like a Ribbon
 artist: John Glacier

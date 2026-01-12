@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 47
 title: Danchi Thesis
 artist: Shinsei Kamattechan

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 36
 title: Forever War
 artist: clipping.  

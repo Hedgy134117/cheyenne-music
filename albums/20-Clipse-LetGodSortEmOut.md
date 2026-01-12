@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 20
 title: Let God Sort Em Out
 artist: Clipse

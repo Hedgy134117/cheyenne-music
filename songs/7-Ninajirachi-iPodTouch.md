@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 7
 title: iPod Touch
 artist: Ninajirachi  

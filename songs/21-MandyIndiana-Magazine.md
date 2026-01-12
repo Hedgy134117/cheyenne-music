@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 21
 title: Magazine
 artist: Mandy, Indiana  

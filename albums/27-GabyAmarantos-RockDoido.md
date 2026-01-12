@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 27
 title: Rock Doido
 artist: Gaby Amarantos

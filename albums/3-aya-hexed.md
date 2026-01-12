@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 3
 title: hexed\!
 artist: aya

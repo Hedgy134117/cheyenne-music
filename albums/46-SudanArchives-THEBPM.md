@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 46
 title: THE BPM
 artist: Sudan Archives

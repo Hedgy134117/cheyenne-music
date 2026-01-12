@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 40
 title: Hymnal
 artist: Lyra Pramuk

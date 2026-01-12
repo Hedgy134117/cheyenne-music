@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 41
 title: HAGEN
 artist: Titanic

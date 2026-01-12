@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 39
 title: Could’ve Been Different (feat. Blu & Shamir)
 artist: McKinley Dixon  

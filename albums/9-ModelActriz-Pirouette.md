@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 9
 title: Pirouette
 artist: Model/Actriz

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 43
 title: BABY
 artist: Dijon

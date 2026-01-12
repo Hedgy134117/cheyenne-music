@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 1
 title: 9 2 5
 artist: Nourished by Time  

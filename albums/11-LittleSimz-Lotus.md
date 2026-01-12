@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 11
 title: Lotus
 artist: Little Simz

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 18
 title: Bite Down
 artist: Ribbon Skirt

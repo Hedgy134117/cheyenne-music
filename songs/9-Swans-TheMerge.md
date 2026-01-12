@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 9
 title: The Merge
 artist: Swans  

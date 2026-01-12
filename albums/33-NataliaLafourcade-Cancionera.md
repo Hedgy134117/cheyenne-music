@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 33
 title: Cancionera
 artist: Natalia Lafourcade

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 30
 title: head, shoulders, knees and ankles
 artist: hemlocke springs  

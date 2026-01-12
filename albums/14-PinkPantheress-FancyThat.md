@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 14
 title: Fancy That
 artist: PinkPantheress

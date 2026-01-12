@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 45
 title: Play
 artist: james K  

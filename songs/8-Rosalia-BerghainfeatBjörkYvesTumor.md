@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 8
 title: Berghain (feat. Björk & Yves Tumor)
 artist: Rosalia  

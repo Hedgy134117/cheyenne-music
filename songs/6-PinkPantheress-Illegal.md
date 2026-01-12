@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 6
 title: Illegal
 artist: PinkPantheress  

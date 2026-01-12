@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 38
 title: Melodie Is A Wound
 artist: Stereolab  

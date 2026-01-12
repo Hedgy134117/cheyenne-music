@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 32
 title: The Spiritual Sound
 artist: Agriculture

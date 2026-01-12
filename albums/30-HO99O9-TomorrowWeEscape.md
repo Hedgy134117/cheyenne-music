@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 30
 title: Tomorrow We Escape
 artist: HO99O9

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 44
 title: Alan Sparhawk with Trampled By Turtles
 artist: Alan Sparhawk & Trampled By Turtles

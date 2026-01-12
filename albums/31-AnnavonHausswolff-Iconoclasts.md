@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 31
 title: Iconoclasts
 artist: Anna von Hausswolff

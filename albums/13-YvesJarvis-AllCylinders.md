@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 13
 title: All Cylinders
 artist: Yves Jarvis

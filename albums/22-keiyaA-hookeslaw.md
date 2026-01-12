@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 22
 title: hooke’s law
 artist: keiyaA

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 20
 title: Enough
 artist: Little Simz  

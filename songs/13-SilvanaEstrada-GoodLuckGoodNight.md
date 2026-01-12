@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 13
 title: Good Luck, Good Night
 artist: Silvana Estrada  

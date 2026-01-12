@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 42
 title: Laini Tani
 artist: Nadah El Shazly

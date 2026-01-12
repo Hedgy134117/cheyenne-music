@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 10
 title: I Love My Computer
 artist: Ninajirachi

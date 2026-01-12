@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 33
 title: Deadstick
 artist: King Gizzard & the Lizard Wizard  

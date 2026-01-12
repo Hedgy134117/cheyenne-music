@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 6
 title: Getting Killed
 artist: Geese

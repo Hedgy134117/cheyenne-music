@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 28
 title: GOLLIWOG
 artist: billy woods

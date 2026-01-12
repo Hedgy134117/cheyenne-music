@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 29
 title: Phantom Island
 artist: King Gizzard & the Lizard Wizard

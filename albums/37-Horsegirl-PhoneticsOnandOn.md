@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 37
 title: Phonetics On and On
 artist: Horsegirl

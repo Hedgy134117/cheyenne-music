@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 29
 title: Diva
 artist: Model/Actriz  

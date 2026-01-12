@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 23
 title: 45 Pounds
 artist: YHWH Nailgun

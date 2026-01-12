@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 8
 title: Big City Life
 artist: SMERZ

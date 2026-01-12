@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 26
 title: Magic Alive\!
 artist: McKinley Dixon

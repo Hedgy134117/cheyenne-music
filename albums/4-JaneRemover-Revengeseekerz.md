@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 4
 title: Revengeseekerz
 artist: Jane Remover

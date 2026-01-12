@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 38
 title: Los Thuthanaka
 artist: Los Thuthanaka

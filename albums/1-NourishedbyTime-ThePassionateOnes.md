@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 1
 title: The Passionate Ones
 artist: Nourished by Time

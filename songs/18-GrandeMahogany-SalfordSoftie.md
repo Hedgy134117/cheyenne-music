@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 18
 title: Salford Softie
 artist: Grande Mahogany  

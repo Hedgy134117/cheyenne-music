@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 47
 title: booboo2
 artist: Yaeji, underscores & Aliyah’s Interlude  

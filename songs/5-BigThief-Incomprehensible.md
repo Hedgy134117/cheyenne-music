@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 5
 title: Incomprehensible
 artist: Big Thief  

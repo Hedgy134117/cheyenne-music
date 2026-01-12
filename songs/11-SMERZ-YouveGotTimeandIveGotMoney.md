@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 11
 title: You’ve Got Time and I’ve Got Money
 artist: SMERZ  

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 3
 title: Striptease
 artist: FKA Twigs  

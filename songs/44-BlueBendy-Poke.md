@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 44
 title: Poke
 artist: Blue Bendy  

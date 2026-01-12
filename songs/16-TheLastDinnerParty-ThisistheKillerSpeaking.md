@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 16
 title: This is the Killer Speaking
 artist: The Last Dinner Party  

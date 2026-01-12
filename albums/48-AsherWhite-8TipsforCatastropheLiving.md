@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 48
 title: 8 Tips for Catastrophe Living
 artist: Asher White

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 42
 title: Bounce House
 artist: Gelli haha  

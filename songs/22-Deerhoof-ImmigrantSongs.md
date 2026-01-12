@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 22
 title: Immigrant Songs
 artist: Deerhoof  

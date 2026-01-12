@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 26
 title: Second Sleep
 artist: Magdalena Bay  

@@ -111,6 +111,7 @@ def split_top_50_albums(filename: str, path: Path) -> None:
 
         frontmatter = [
             "layout: album.njk\n",
+            "tags: album\n",
             f"rank: {rank}\n",
             f"title: {title}\n",
             f"artist: {artist}\n",
@@ -137,7 +138,7 @@ def split_top_50_albums(filename: str, path: Path) -> None:
         albums_created += 1
 
 
-def split_top_n_other(filename: str, path: Path, divider: str) -> None:
+def split_top_n_other(filename: str, path: Path, divider: str, tag: str) -> None:
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -160,6 +161,7 @@ def split_top_n_other(filename: str, path: Path, divider: str) -> None:
 
         frontmatter = [
             "layout: album.njk\n",
+            f"tags: {tag}\n",
             f"rank: {rank}\n",
             f"title: {title}\n",
             f"artist: {artist}\n",
@@ -190,9 +192,9 @@ if __name__ == "__main__":
         end = int(sys.argv[3]) if len(sys.argv) > 3 else len(albums)
         download_album_art(albums[start:end])
     elif command == "split":
-        # split_top_50_albums(MAIN, Path("albums"))
-        split_top_n_other(MAIN, Path("songs"), "50 Songs:")
-        # split_top_n_other(MAIN, Path("songs"), "5 EPs:")
+        split_top_50_albums(MAIN, Path("albums"))
+        split_top_n_other(MAIN, Path("songs"), "50 Songs:", "song")
+        split_top_n_other(MAIN, Path("eps"), "5 EPs:", "ep")
         # split_top_n_other(
         #     MAIN,
         #     Path("songs"),

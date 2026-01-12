@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 12
 title: Tether
 artist: Annahstasia

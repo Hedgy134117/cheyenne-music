@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 10
 title: Pretrial (let her go home)
 artist: Fiona Apple  

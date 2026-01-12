@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 14
 title: Better (Unplugged)
 artist: Kelela  

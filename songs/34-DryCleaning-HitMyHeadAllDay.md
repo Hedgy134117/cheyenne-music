@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 34
 title: Hit My Head All Day
 artist: Dry Cleaning  

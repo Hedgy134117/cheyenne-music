@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 7
 title: Portrait of my Heart
 artist: SPELLLING

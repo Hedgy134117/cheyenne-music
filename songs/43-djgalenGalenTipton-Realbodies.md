@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 43
 title: Real bodies
 artist: dj galen & Galen Tipton  

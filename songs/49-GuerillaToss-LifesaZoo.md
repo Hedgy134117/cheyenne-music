@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 49
 title: Life’s a Zoo
 artist: Guerilla Toss  

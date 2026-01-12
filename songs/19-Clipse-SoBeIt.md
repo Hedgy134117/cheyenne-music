@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 19
 title: So Be It
 artist: Clipse  

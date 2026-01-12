@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 23
 title: The Happy Dictator
 artist: Gorillaz  

@@ -8,13 +8,11 @@
 {% block content %}
 <p class="heading center">Top 50 Songs</p>
 <ol reversed>
-    {% set sortedSongs = collections.all | sort(true, false, attribute="data.rank") %}
+    {% set sortedSongs = collections.song | sort(true, false, attribute="data.rank") %}
     {% for song in sortedSongs %}
-    {% if '/songs/' in song.url and song.url != page.url %}
     {% set rank = song.data.rank %}
     <li class="song" id="{{ song.data.rank }}" style="
-            margin-left: calc(20% + sin({{ rank }}deg * 360deg / 50deg) * 20%);
-            transform-origin: left center;
+            margin-left: calc(25% + sin({{ rank }}deg * 360deg / 50deg) * 25%);
             transform: rotate(calc(sin({{ rank }}deg * 360deg / 50deg * -1) * 10deg));
             margin-bottom: 1em;
         ">
@@ -23,7 +21,6 @@
         <!-- </a> -->
         <!-- <hr> -->
     </li>
-    {% endif %}
     {% endfor %}
 </ol>
 {% endblock%}

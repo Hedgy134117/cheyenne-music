@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 45
 title: Every Video Without Your Face, Every Sound Without Your Name
 artist: Lucy Liyou

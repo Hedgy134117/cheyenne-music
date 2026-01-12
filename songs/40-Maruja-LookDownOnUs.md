@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 40
 title: Look Down On Us
 artist: Maruja  

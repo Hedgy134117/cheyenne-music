@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 39
 title: Cabin in the Sky
 artist: De La Soul

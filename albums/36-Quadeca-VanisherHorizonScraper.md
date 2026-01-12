@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 36
 title: Vanisher, Horizon Scraper
 artist: Quadeca

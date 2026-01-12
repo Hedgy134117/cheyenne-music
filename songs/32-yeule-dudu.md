@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 32
 title: dudu
 artist: yeule  

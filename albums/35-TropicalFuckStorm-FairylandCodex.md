@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 35
 title: Fairyland Codex
 artist: Tropical Fuck Storm

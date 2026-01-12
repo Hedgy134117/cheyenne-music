@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 25
 title: Yamaha
 artist: Dijon  

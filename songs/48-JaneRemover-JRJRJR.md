@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 48
 title: JRJRJR
 artist: Jane Remover  

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 17
 title: The Distaff
 artist: Maud the Moth

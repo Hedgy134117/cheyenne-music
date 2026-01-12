@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 5
 title: A City Drowned in God’s Black Tears
 artist: Infinity Knives & Brian Ennals

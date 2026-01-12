@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 41
 title: Magnolia
 artist: Deafheaven  

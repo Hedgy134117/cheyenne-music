@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 2
 title: Eusexua
 artist: FKA Twigs 

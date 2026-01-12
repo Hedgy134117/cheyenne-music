@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 25
 title: Nested in Tangles
 artist: Hannah Frances

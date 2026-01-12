@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 4
 title: Like James Said
 artist: U.S. Girls  

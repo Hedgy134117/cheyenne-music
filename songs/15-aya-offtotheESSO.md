@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 15
 title: off to the ESSO
 artist: aya  

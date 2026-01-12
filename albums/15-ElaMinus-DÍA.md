@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 15
 title: DÍA
 artist: Ela Minus

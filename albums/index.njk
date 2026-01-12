@@ -66,9 +66,8 @@
 {% block content %}
 <p class="heading center">Top 50 Albums</p>
 <ol reversed>
-  {% set sortedAlbums = collections.all | sort(true, false, attribute="data.rank") %}
+  {% set sortedAlbums = collections.album | sort(true, false, attribute="data.rank") %}
   {% for album in sortedAlbums %}
-  {% if '/albums/' in album.url and album.url != page.url %}
   <li class="album" id="{{ album.data.rank }}">
     <a href="{{ album.url }}">
       <i>{{ album.data.title | markdownin | safe }}</i> by {{ album.data.artist | markdownin | safe }}
@@ -85,7 +84,6 @@
     </div>
     <hr>
   </li>
-  {% endif %}
   {% endfor %}
 </ol>
 {% endblock%}

@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 28
 title: Destiny Arrives
 artist: SPELLLING  

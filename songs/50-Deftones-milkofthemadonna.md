@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 50
 title: milk of the madonna
 artist: Deftones

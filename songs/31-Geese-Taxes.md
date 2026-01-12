@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 31
 title: Taxes
 artist: Geese  

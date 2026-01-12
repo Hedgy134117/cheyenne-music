@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 19
 title: FEMME FATALE
 artist: Mon Laferte

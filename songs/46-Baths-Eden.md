@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 46
 title: Eden
 artist: Baths  

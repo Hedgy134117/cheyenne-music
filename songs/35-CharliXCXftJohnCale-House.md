@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: song
 rank: 35
 title: House
 artist: Charli XCX ft. John Cale  

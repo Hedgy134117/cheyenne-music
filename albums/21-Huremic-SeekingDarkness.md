@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 21
 title: Seeking Darkness
 artist: Huremic

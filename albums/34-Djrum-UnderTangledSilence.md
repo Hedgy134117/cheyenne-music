@@ -1,5 +1,6 @@
 ---
 layout: album.njk
+tags: album
 rank: 34
 title: Under Tangled Silence
 artist: Djrum
