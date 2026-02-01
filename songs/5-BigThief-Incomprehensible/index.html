@@ -35,8 +35,14 @@
         .center {
             text-align: center;
         }
+
+        @media only screen and (max-width: 540px) {
+            ol {
+                padding-inline-start: 20px;
+            }
+        }
     </style>
-    <title>Top 50 Albums: Incomprehensible</title>
+    <title>Top 50 Songs: Incomprehensible</title>
     
 <style>
     .heading {
@@ -45,56 +51,6 @@
 
     .review {
         font-family: 'Times New Roman', Times, serif;
-    }
-
-    .review-img {
-        float: right;
-        margin: 0 0 1em 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .review-img img {
-        height: 500px;
-    }
-
-    .review-img-mobile {
-        display: none;
-    }
-
-    .nav {
-        display: flex
-    }
-
-    .nav p:first-child {
-        flex-grow: 1;
-    }
-
-    .nav p:last-child {
-        margin-left: 1em;
-    }
-
-    @media only screen and (max-width: 540px) {
-        .review-img-desktop {
-            display: none;
-        }
-
-        .review-img-mobile {
-            display: flex;
-        }
-
-        .review-img {
-            float: right;
-            margin: 0 0 1em 0;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .review-img img {
-            width: 100%;
-            height: auto;
-        }
     }
 </style>
 
@@ -119,27 +75,18 @@
         <div class="window-pane" style="height: 100%">
             
 <div>
-    <div class="review-img review-img-desktop standard-dialog center">
-        <img src=".">
-    </div>
-
     <p class="heading">
         <i>Incomprehensible</i> by Big Thief
     </p>
     <p class="subheading">#5</p>
 
-    <div class="review-img review-img-mobile standard-dialog center">
-        <img src=".">
-    </div>
-
     <div class="review">
-        
+        <p>A song that, for me, hits me like a brick every time I put it on. Instrumentally, it’s some of Big Thief’s most lush work yet - with very psychedelic, meandering guitar sounds, and an ethereal, reverb-soaked atmosphere. Then there are touches of strings in the mix and shimmering percussion that give it an even more spectral vibe. That said, though, the main attraction for me in “Incomprehensible” is the lyrics - if for no other reason than just being exhausted of the discourse around women aging. In this track, Adrienne Lenker addresses the way that society gives us the language to fear getting older, and goes on to celebrate the beauty of the older women who gave her life (“My mother and my grandma/my great-grandmother too/wrinkle like the river/sweeten like the dew”) as well as the features of aging that she sees in herself, just shy of 33 years old. Lenker does this in such a beautifully poetic way that it stops me in my tracks each time I hear it.</p>
+
     </div>
 
     <div class="nav">
         <p><a href="../#5">&lt; List</a></p>
-        <p><a href="../6-PinkPantheress-Illegal">&lt; #6</a></p>
-        <p><a href="../4-USGirls-LikeJamesSaid">#4 &gt;</a></p>
     </div>
 </div>
 

@@ -35,8 +35,14 @@
         .center {
             text-align: center;
         }
+
+        @media only screen and (max-width: 540px) {
+            ol {
+                padding-inline-start: 20px;
+            }
+        }
     </style>
-    <title>Top 50 Albums: Men in Bars</title>
+    <title>Top 50 Songs: Men in Bars</title>
     
 <style>
     .heading {
@@ -45,56 +51,6 @@
 
     .review {
         font-family: 'Times New Roman', Times, serif;
-    }
-
-    .review-img {
-        float: right;
-        margin: 0 0 1em 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .review-img img {
-        height: 500px;
-    }
-
-    .review-img-mobile {
-        display: none;
-    }
-
-    .nav {
-        display: flex
-    }
-
-    .nav p:first-child {
-        flex-grow: 1;
-    }
-
-    .nav p:last-child {
-        margin-left: 1em;
-    }
-
-    @media only screen and (max-width: 540px) {
-        .review-img-desktop {
-            display: none;
-        }
-
-        .review-img-mobile {
-            display: flex;
-        }
-
-        .review-img {
-            float: right;
-            margin: 0 0 1em 0;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .review-img img {
-            width: 100%;
-            height: auto;
-        }
     }
 </style>
 
@@ -119,27 +75,18 @@
         <div class="window-pane" style="height: 100%">
             
 <div>
-    <div class="review-img review-img-desktop standard-dialog center">
-        <img src=".">
-    </div>
-
     <p class="heading">
         <i>Men in Bars</i> by Japanese Breakfast (feat. Jeff Bridges)
     </p>
     <p class="subheading">#2</p>
 
-    <div class="review-img review-img-mobile standard-dialog center">
-        <img src=".">
-    </div>
-
     <div class="review">
-        
+        <p>Those of us who were privy to Michelle’s “pop songs 2020” EP with Ryan Galloway did a double take when the first verse of “Men in Bars” hit! This song is a revisitation and dressing up of the austere, demo-like “Ballad 0” that closed out that EP, and it makes for one of Zauner’s best songs. The dreamy, pensive melody works so well in the context of a country ballad, and I love the melancholic vibe that Jeff Bridges brings with his more gruff, Nick Cave-esque vocal. The lyrics are also fantastic: aided by the duet format, the dynamic between a man who is stuck in cycles of “tumbling down” before “finding his head again” and a woman who lapses in her faith due to frustration, is clearer than ever. The reminiscing between the characters and their commitment to staying together makes this track feel like a particularly mature take on this type of conflict in a long-term relationship. A good reminder of the magic Zauner evokes through her songwriting, in this case just by capturing a mundanely troubled relationship with so much perspective and empathy.</p>
+
     </div>
 
     <div class="nav">
         <p><a href="../#2">&lt; List</a></p>
-        <p><a href="../3-FKATwigs-Striptease">&lt; #3</a></p>
-        <p><a href="../1-NourishedbyTime-925">#1 &gt;</a></p>
     </div>
 </div>
 

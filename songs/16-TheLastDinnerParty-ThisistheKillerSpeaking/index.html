@@ -35,8 +35,14 @@
         .center {
             text-align: center;
         }
+
+        @media only screen and (max-width: 540px) {
+            ol {
+                padding-inline-start: 20px;
+            }
+        }
     </style>
-    <title>Top 50 Albums: This is the Killer Speaking</title>
+    <title>Top 50 Songs: This is the Killer Speaking</title>
     
 <style>
     .heading {
@@ -45,56 +51,6 @@
 
     .review {
         font-family: 'Times New Roman', Times, serif;
-    }
-
-    .review-img {
-        float: right;
-        margin: 0 0 1em 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .review-img img {
-        height: 500px;
-    }
-
-    .review-img-mobile {
-        display: none;
-    }
-
-    .nav {
-        display: flex
-    }
-
-    .nav p:first-child {
-        flex-grow: 1;
-    }
-
-    .nav p:last-child {
-        margin-left: 1em;
-    }
-
-    @media only screen and (max-width: 540px) {
-        .review-img-desktop {
-            display: none;
-        }
-
-        .review-img-mobile {
-            display: flex;
-        }
-
-        .review-img {
-            float: right;
-            margin: 0 0 1em 0;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .review-img img {
-            width: 100%;
-            height: auto;
-        }
     }
 </style>
 
@@ -119,18 +75,10 @@
         <div class="window-pane" style="height: 100%">
             
 <div>
-    <div class="review-img review-img-desktop standard-dialog center">
-        <img src=".">
-    </div>
-
     <p class="heading">
         <i>This is the Killer Speaking</i> by The Last Dinner Party
     </p>
     <p class="subheading">#16</p>
-
-    <div class="review-img review-img-mobile standard-dialog center">
-        <img src=".">
-    </div>
 
     <div class="review">
         
@@ -138,8 +86,6 @@
 
     <div class="nav">
         <p><a href="../#16">&lt; List</a></p>
-        <p><a href="../17-CateLeBon-IsItWorthItHappyBirthday">&lt; #17</a></p>
-        <p><a href="../15-aya-offtotheESSO">#15 &gt;</a></p>
     </div>
 </div>
 
