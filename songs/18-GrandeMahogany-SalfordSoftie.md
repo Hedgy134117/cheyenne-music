@@ -1,5 +1,5 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 18
 title: Salford Softie

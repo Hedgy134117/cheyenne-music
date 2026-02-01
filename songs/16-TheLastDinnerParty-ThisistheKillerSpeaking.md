@@ -1,5 +1,5 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 16
 title: This is the Killer Speaking

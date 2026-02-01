@@ -1,9 +1,9 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 47
-title: booboo2
-artist: Yaeji, underscores & Aliyah’s Interlude  
+title: stick
+artist: Jim Legxacy  
 is_short: True
 prev: 48-JaneRemover-JRJRJR
 next: 46-Baths-Eden

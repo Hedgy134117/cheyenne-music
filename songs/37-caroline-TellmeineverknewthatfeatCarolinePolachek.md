@@ -1,5 +1,5 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 37
 title: Tell me i never knew that (feat. Caroline Polachek)

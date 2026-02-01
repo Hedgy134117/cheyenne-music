@@ -138,6 +138,72 @@ def split_top_50_albums(filename: str, path: Path) -> None:
         albums_created += 1
 
 
+def split_top_50_songs(filename: str, path: Path) -> None:
+    with open(filename, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    songs_created = 0
+    i = lines.index("50 Songs:\n") + 2
+
+    prev = ""
+    next_ = ""
+    while i < len(lines) and songs_created < 50:
+        # Find next song header
+        header_match = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if not header_match:
+            i += 1
+            continue
+
+        rank, title, artist = header_match.groups()
+
+        # Collect content until next header or end
+        content_lines = []
+        i += 1
+        while (
+            i < len(lines)
+            and not re.match(r"[0-9]+\. .+, by .+", lines[i])
+            and songs_created < 49
+        ):
+            content_lines.append(lines[i].lstrip() + "\n")
+            if len(content_lines) == 2:
+                content_lines.append("<!-- excerpt -->\n\n")
+            i += 1
+
+        num_paragraphs = sum([len(line.strip()) > 0 for line in content_lines])
+
+        # Create frontmatter
+        clean_title = clean_text(title)
+        clean_artist = clean_text(artist)
+
+        prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if prev:
+            prev_rank, prev_title, prev_artist = prev.groups()
+            prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+
+        frontmatter = [
+            "layout: song.njk\n",
+            "tags: song\n",
+            f"rank: {rank}\n",
+            f"title: {title}\n",
+            f"artist: {artist}\n",
+            f"is_short: {num_paragraphs == 2 or num_paragraphs == 0}\n",
+            f"prev: {prev if prev else ''}\n",
+            f"next: {next_}\n",
+        ]
+
+        name = f"{rank}-{clean_artist}-{clean_title}"
+
+        create_file(
+            path / f"{name}.md",
+            frontmatter,
+            content_lines,
+        )
+
+        next_ = name
+
+        songs_created += 1
+
+
 def split_top_n_other(filename: str, path: Path, divider: str, tag: str) -> None:
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
@@ -182,7 +248,7 @@ if __name__ == "__main__":
         print("Usage: python main.py <download|split> [start] [end]")
         sys.exit(1)
 
-    MAIN = "Best Music of 2025.md"
+    MAIN = "Best Music of 2025 (1).md"
 
     albums = get_top_50_albums(MAIN)
     command = sys.argv[1]
@@ -193,8 +259,9 @@ if __name__ == "__main__":
         download_album_art(albums[start:end])
     elif command == "split":
         split_top_50_albums(MAIN, Path("albums"))
-        split_top_n_other(MAIN, Path("songs"), "50 Songs:", "song")
-        split_top_n_other(MAIN, Path("eps"), "5 EPs:", "ep")
+        split_top_50_songs(MAIN, Path("songs"))
+        # split_top_n_other(MAIN, Path("songs"), "50 Songs:", "song")
+        # split_top_n_other(MAIN, Path("eps"), "5 EPs:", "ep")
         # split_top_n_other(
         #     MAIN,
         #     Path("songs"),

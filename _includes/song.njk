@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+
+{% block title %}Top 50 Songs: {{ title }}{% endblock %}
+
+{% block head %}
+<style>
+    .heading {
+        margin: 0;
+    }
+
+    .review {
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div>
+    <p class="heading">
+        <i>{{ title | markdownin | safe }}</i> by {{ artist | markdownin | safe }}
+    </p>
+    <p class="subheading">#{{ rank }}</p>
+
+    <div class="review">
+        {{ content | safe }}
+    </div>
+
+    <div class="nav">
+        <p><a href="../#{{ rank }}">&lt; List</a></p>
+    </div>
+</div>
+{% endblock %}

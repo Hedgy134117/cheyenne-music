@@ -1,5 +1,5 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 39
 title: Could’ve Been Different (feat. Blu & Shamir)

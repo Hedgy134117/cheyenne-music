@@ -3,6 +3,16 @@
 {% block title %}Top 50 Songs{% endblock %}
 
 {% block head %}
+<style>
+    .excerpt {
+        margin: 1em 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .excerpt p {
+        display: inline;
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -11,15 +21,24 @@
     {% set sortedSongs = collections.song | sort(true, false, attribute="data.rank") %}
     {% for song in sortedSongs %}
     {% set rank = song.data.rank %}
-    <li class="song" id="{{ song.data.rank }}" style="
-            margin-left: calc(25% + sin({{ rank }}deg * 360deg / 50deg) * 25%);
-            transform: rotate(calc(sin({{ rank }}deg * 360deg / 50deg * -1) * 10deg));
-            margin-bottom: 1em;
-        ">
-        <!-- <a href="{{ song.url }}"> -->
+    <li class="song" id="{{ song.data.rank }}" style="">
+        {% if not song.data.is_short %}
+        <a href="{{ song.url }}">
+            <i>{{ song.data.title | markdownin | safe }}</i> by {{ song.data.artist | markdownin | safe }}
+        </a>
+        {% else %}
         <i>{{ song.data.title | markdownin | safe }}</i> by {{ song.data.artist | markdownin | safe }}
-        <!-- </a> -->
-        <!-- <hr> -->
+        {% endif %}
+
+        {% if song.page.excerpt %}
+        <div class="excerpt">
+            {{ song.page.excerpt | markdown | safe }}
+            {% if not song.data.is_short %}<a href="{{ song.url }}" style="color: gray;">Read
+                more&hellip;</a>{%
+            endif %}
+        </div>
+        {% endif %}
+        <hr>
     </li>
     {% endfor %}
 </ol>

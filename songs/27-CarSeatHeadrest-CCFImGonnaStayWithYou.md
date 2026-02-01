@@ -1,5 +1,5 @@
 ---
-layout: album.njk
+layout: song.njk
 tags: song
 rank: 27
 title: CCF (I’m Gonna Stay With You)
