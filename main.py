@@ -23,6 +23,15 @@ def get_top_50_albums(filename: str) -> list[tuple[str, str]]:
     return re.findall(r"[0-9]+\. (.+)\, by (.+)", music)[:50]
 
 
+def get_other_albums(filename: str) -> list[tuple[str, str]]:
+    with open(filename, encoding="utf-8") as f:
+        music = "".join(f.readlines())
+        index = "Late 2024 albums I enjoyed this year:"
+        music = music[music.index(index) :]
+
+    return re.findall(r"[0-9]+\. (.+)\, by (.+)", music)
+
+
 def download_album_art(albums: list[tuple[str, str]]) -> None:
     driver_options = Options()
     driver_options.add_argument("--headless=new")
@@ -277,56 +286,101 @@ def split_top_5_eps(filename: str, path: Path) -> None:
         eps_created += 1
 
 
-def split_top_n_other(filename: str, path: Path, divider: str, tag: str) -> None:
+def split_other(filename: str, path: Path) -> None:
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
 
+    i = lines.index("Late 2024 albums I enjoyed this year:\n")
+
+    is_last_year = True
+    last_last_year = False
+
     prev = ""
     next_ = ""
-    for i in range(lines.index(f"{divider}\n") + 2, len(lines)):
-        line = lines[i]
-        if not line.strip():
-            break
+    while i < len(lines):
+        # Find next album header
+        header_match = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if not header_match:
+            i += 1
+            continue
 
-        rank, title, artist = re.match(r"([0-9]+)\. (.+), by (.+)", line).groups()
+        rank, title, artist = header_match.groups()
 
+        # Collect content until next header or end
+        content_lines = []
+        i += 1
+        while i < len(lines) and not re.match(r"[0-9]+\. .+, by .+", lines[i]):
+            if is_last_year and "Older albums that stayed with me in 2025" in lines[i]:
+                prev = ""
+                next_ = ""
+                last_last_year = True
+                break
+
+            content_lines.append(lines[i].lstrip() + "\n")
+            if len(content_lines) == 2:
+                content_lines.append("<!-- excerpt -->\n\n")
+            i += 1
+
+        num_paragraphs = sum([len(line.strip()) > 0 for line in content_lines])
+
+        # Create frontmatter
         clean_title = clean_text(title)
         clean_artist = clean_text(artist)
 
-        prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i + 1])
-        if prev:
-            prev_rank, prev_title, prev_artist = prev.groups()
-            prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+        try:
+            prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+            if prev:
+                prev_rank, prev_title, prev_artist = prev.groups()
+                prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+        except IndexError:
+            prev = ""
 
         frontmatter = [
             "layout: album.njk\n",
-            f"tags: {tag}\n",
+            f"tags: {'lastyear' if is_last_year else 'older'}\n",
             f"rank: {rank}\n",
             f"title: {title}\n",
             f"artist: {artist}\n",
-            f"is_short: True\n",
+            f"is_short: {num_paragraphs == 2}\n",
             f"prev: {prev if prev else ''}\n",
             f"next: {next_}\n",
         ]
 
+        # Find image if exists
+        img_files = list(Path("imgs").glob(f"{clean_artist}-{clean_title}*"))
+        if img_files:
+            frontmatter.append(f"img_url: /imgs/{img_files[0].name}\n")
+
         name = f"{rank}-{clean_artist}-{clean_title}"
+
+        create_file(
+            path / f"{name}.md",
+            frontmatter,
+            content_lines,
+        )
 
         next_ = name
 
-        create_file(path / f"{name}.md", frontmatter, [])
+        if last_last_year:
+            is_last_year = False
 
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python main.py <download|split> [start] [end]")
+        print("Usage: python main.py <download50|downloadother|split> [start] [end]")
         sys.exit(1)
 
     MAIN = "Best Music of 2025 (1).md"
 
-    albums = get_top_50_albums(MAIN)
     command = sys.argv[1]
 
-    if command == "download":
+    if command == "download50":
+        albums = get_top_50_albums(MAIN)
+        start = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+        end = int(sys.argv[3]) if len(sys.argv) > 3 else len(albums)
+        download_album_art(albums[start:end])
+    elif command == "downloadother":
+        albums = get_other_albums(MAIN)
         start = int(sys.argv[2]) if len(sys.argv) > 2 else 0
         end = int(sys.argv[3]) if len(sys.argv) > 3 else len(albums)
         download_album_art(albums[start:end])
@@ -334,18 +388,7 @@ if __name__ == "__main__":
         split_top_50_albums(MAIN, Path("albums"))
         split_top_50_songs(MAIN, Path("songs"))
         split_top_5_eps(MAIN, Path("eps"))
-        # split_top_n_other(MAIN, Path("songs"), "50 Songs:", "song")
-        # split_top_n_other(MAIN, Path("eps"), "5 EPs:", "ep")
-        # split_top_n_other(
-        #     MAIN,
-        #     Path("songs"),
-        #     "Late 2024 albums I enjoyed this year:",
-        # )
-        # split_top_n_other(
-        #     MAIN,
-        #     Path("songs"),
-        #     "Older albums that stayed with me in 2025:",
-        # )
+        split_other(MAIN, Path("other"))
     else:
         print(f"Unknown command: {command}")
         sys.exit(1)
