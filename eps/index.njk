@@ -11,15 +11,12 @@
     {% set sortedEPs = collections.ep | sort(true, false, attribute="data.rank") %}
     {% for ep in sortedEPs %}
     {% set rank = ep.data.rank %}
-    <li class="ep" id="{{ ep.data.rank }}" style="
-            /* margin-left: calc(20% + sin({{ rank }}deg * 360deg / 5deg) * 20%); */
-            /* transform: rotate(calc(sin({{ rank }}deg * 360deg / 50deg * -1) * 10deg)); */
-            /* margin-bottom: 1em; */
-        ">
-        <!-- <a href="{{ ep.url }}"> -->
+    <li class="ep" id="{{ ep.data.rank }}">
         <i>{{ ep.data.title | markdownin | safe }}</i> by {{ ep.data.artist | markdownin | safe }}
-        <!-- </a> -->
-        <!-- <hr> -->
+        <div class="excerpt">
+            {{ ep.page.excerpt | markdown | safe }}
+        </div>
+        <hr>
     </li>
     {% endfor %}
 </ol>

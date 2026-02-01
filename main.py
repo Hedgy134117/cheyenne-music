@@ -204,6 +204,69 @@ def split_top_50_songs(filename: str, path: Path) -> None:
         songs_created += 1
 
 
+def split_top_5_eps(filename: str, path: Path) -> None:
+    with open(filename, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    eps_created = 0
+    i = lines.index("5 EPs:\n") + 2
+
+    prev = ""
+    next_ = ""
+    while i < len(lines) and eps_created < 5:
+        # Find next ep header
+        header_match = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if not header_match:
+            i += 1
+            continue
+
+        rank, title, artist = header_match.groups()
+
+        # Collect content until next header or end
+        content_lines = []
+        i += 1
+        while i < len(lines) and not re.match(r"[0-9]+\. .+, by .+", lines[i]):
+            content_lines.append(lines[i].lstrip() + "\n")
+            if len(content_lines) == 2:
+                content_lines.append("<!-- excerpt -->\n\n")
+            i += 1
+
+            if eps_created == 4 and lines[i] == "\n":
+                break
+
+        # Create frontmatter
+        clean_title = clean_text(title)
+        clean_artist = clean_text(artist)
+
+        prev = re.match(r"([0-9]+)\. (.+), by (.+)", lines[i])
+        if prev:
+            prev_rank, prev_title, prev_artist = prev.groups()
+            prev = f"{prev_rank}-{clean_text(prev_artist)}-{clean_text(prev_title)}"
+
+        frontmatter = [
+            "layout: song.njk\n",
+            "tags: ep\n",
+            f"rank: {rank}\n",
+            f"title: {title}\n",
+            f"artist: {artist}\n",
+            f"is_short: True\n",
+            f"prev: {prev if prev else ''}\n",
+            f"next: {next_}\n",
+        ]
+
+        name = f"{rank}-{clean_artist}-{clean_title}"
+
+        create_file(
+            path / f"{name}.md",
+            frontmatter,
+            content_lines,
+        )
+
+        next_ = name
+
+        eps_created += 1
+
+
 def split_top_n_other(filename: str, path: Path, divider: str, tag: str) -> None:
     with open(filename, encoding="utf-8") as f:
         lines = f.readlines()
@@ -260,6 +323,7 @@ if __name__ == "__main__":
     elif command == "split":
         split_top_50_albums(MAIN, Path("albums"))
         split_top_50_songs(MAIN, Path("songs"))
+        split_top_5_eps(MAIN, Path("eps"))
         # split_top_n_other(MAIN, Path("songs"), "50 Songs:", "song")
         # split_top_n_other(MAIN, Path("eps"), "5 EPs:", "ep")
         # split_top_n_other(
