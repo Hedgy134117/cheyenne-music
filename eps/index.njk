@@ -3,6 +3,64 @@
 {% block title %}Top 50 Songs{% endblock %}
 
 {% block head %}
+<style>
+    .excerpt {
+        margin: 1em 0;
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    li:nth-child(even) .excerpt {
+        flex-direction: row-reverse;
+    }
+
+    .excerpt-content p {
+        flex-grow: 1;
+        display: inline;
+    }
+
+    .excerpt-img {
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .excerpt-img img {
+        height: 150px;
+    }
+
+    li:nth-child(even) .excerpt-img {
+        margin-left: 0;
+        margin-right: 4em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        li:nth-child(even) .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        .excerpt-img {
+            margin-left: 0;
+            margin-bottom: 1em;
+            align-self: center;
+        }
+
+        .excerpt-img img {
+            height: 200px;
+        }
+
+        li:nth-child(even) .excerpt-img {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -14,7 +72,15 @@
     <li class="ep" id="{{ ep.data.rank }}">
         <i>{{ ep.data.title | markdownin | safe }}</i> by {{ ep.data.artist | markdownin | safe }}
         <div class="excerpt">
-            {{ ep.page.excerpt | markdown | safe }}
+            <div class="excerpt-content">
+                {{ ep.page.excerpt | markdown | safe }}
+                {% if not ep.data.is_short %}<a href="{{ ep.url }}" style="color: gray;">Read
+                    more&hellip;</a>{%
+                endif %}
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="{{ ep.data.img_url }}" alt="{{ ep.data.title }} cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>

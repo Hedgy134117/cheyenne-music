@@ -7,6 +7,7 @@ artist: Nourished by Time
 is_short: False
 prev: 2-JapaneseBreakfastfeatJeffBridges-MeninBars
 next: 
+img_url: /imgs/NourishedbyTime-925.jpg
 ---
 
 In 6 years of making end-of-year music lists, 2025 is the very first time that my favorite song of the year was from my favorite album of the year. In this case, there wasn’t any need for a second thought \- no album gave me as much hope and excitement this year as *The Passionate Ones,* and “9 2 5” is the epitome of what makes the record work so well: from its bright piano keys to its energetic Baltimore club feel, to the story it tells. It also almost feels like the mission statement of NBT’s vision and philosophy.  

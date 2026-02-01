@@ -6,11 +6,59 @@
 <style>
     .excerpt {
         margin: 1em 0;
+        display: flex;
+        align-items: center;
         font-family: 'Times New Roman', Times, serif;
     }
 
-    .excerpt p {
+    li:nth-child(even) .excerpt {
+        flex-direction: row-reverse;
+    }
+
+    .excerpt-content p {
+        flex-grow: 1;
         display: inline;
+    }
+
+    .excerpt-img {
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .excerpt-img img {
+        height: 150px;
+    }
+
+    li:nth-child(even) .excerpt-img {
+        margin-left: 0;
+        margin-right: 4em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        li:nth-child(even) .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        .excerpt-img {
+            margin-left: 0;
+            margin-bottom: 1em;
+            align-self: center;
+        }
+
+        .excerpt-img img {
+            height: 200px;
+        }
+
+        li:nth-child(even) .excerpt-img {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 </style>
 {% endblock %}
@@ -32,10 +80,15 @@
 
         {% if song.page.excerpt %}
         <div class="excerpt">
-            {{ song.page.excerpt | markdown | safe }}
-            {% if not song.data.is_short %}<a href="{{ song.url }}" style="color: gray;">Read
-                more&hellip;</a>{%
-            endif %}
+            <div class="excerpt-content">
+                {{ song.page.excerpt | markdown | safe }}
+                {% if not song.data.is_short %}<a href="{{ song.url }}" style="color: gray;">Read
+                    more&hellip;</a>{%
+                endif %}
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="{{ song.data.img_url }}" alt="{{ song.data.title }} cover" loading="lazy">
+            </div>
         </div>
         {% endif %}
         <hr>

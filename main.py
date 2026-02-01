@@ -193,6 +193,11 @@ def split_top_50_songs(filename: str, path: Path) -> None:
 
         name = f"{rank}-{clean_artist}-{clean_title}"
 
+        # Find image if exists
+        img_files = list(Path("imgs").glob(f"{clean_artist}-{clean_title}*"))
+        if img_files:
+            frontmatter.append(f"img_url: /imgs/{img_files[0].name}\n")
+
         create_file(
             path / f"{name}.md",
             frontmatter,
@@ -255,6 +260,11 @@ def split_top_5_eps(filename: str, path: Path) -> None:
         ]
 
         name = f"{rank}-{clean_artist}-{clean_title}"
+
+        # Find image if exists
+        img_files = list(Path("imgs").glob(f"{clean_artist}-{clean_title}*"))
+        if img_files:
+            frontmatter.append(f"img_url: /imgs/{img_files[0].name}\n")
 
         create_file(
             path / f"{name}.md",
