@@ -1,0 +1,33 @@
+{% extends "base.njk" %}
+
+{% block title %}About{% endblock %}
+
+{% block head %}
+<style>
+    .window-pane span,
+    .window-pane li {
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<p class="heading center">About</p>
+<p>Content by: <span>cheyenne!</span></p>
+<p>Website by: <span>graham!</span></p>
+<p>
+    Website made with help from:
+</p>
+<ul>
+    <li>
+        <a href="https://covers.musichoarders.xyz/" target="_blank">COV (Cover Search Engine)</a>, for album art
+    </li>
+    <li>
+        <a href="https://www.11ty.dev/" target="_blank">11ty</a>, for static site generation
+    </li>
+    <li>
+        <a href="https://sakofchit.github.io/system.css/" target="_blank">system.css</a>, for styling (huge thank you to
+        <a href="https://sakun.co/" target="_blank">Sakun Acharige</a> for this CSS library!)
+    </li>
+</ul>
+{% endblock%}
