@@ -6,7 +6,7 @@ title: Nunsexmonkrock
 artist: Nina Hagen (1982)
 is_short: False
 prev: 2-DiamandaGalás1988-YouMustBeCertainoftheDevil
-next: 3-babymorocco-Amour
+next: 
 img_url: /imgs/NinaHagen1982-Nunsexmonkrock.jpg
 ---
 

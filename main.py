@@ -311,8 +311,6 @@ def split_other(filename: str, path: Path) -> None:
         i += 1
         while i < len(lines) and not re.match(r"[0-9]+\. .+, by .+", lines[i]):
             if is_last_year and "Older albums that stayed with me in 2025" in lines[i]:
-                prev = ""
-                next_ = ""
                 last_last_year = True
                 break
 
@@ -361,7 +359,9 @@ def split_other(filename: str, path: Path) -> None:
 
         next_ = name
 
-        if last_last_year:
+        if last_last_year and is_last_year:
+            prev = ""
+            next_ = ""
             is_last_year = False
 
 

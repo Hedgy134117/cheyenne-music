@@ -6,7 +6,7 @@ title: Amour
 artist: babymorocco
 is_short: True
 prev: 
-next: 
+next: 2-Prostitute-AttemptedMartyr
 img_url: /imgs/babymorocco-Amour.jpg
 ---
 
