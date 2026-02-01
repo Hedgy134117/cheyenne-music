@@ -9,6 +9,8 @@ export default async function (eleventyConfig) {
     // Copy the fonts directory to the output
     eleventyConfig.addPassthroughCopy("fonts");
 
+    eleventyConfig.addPassthroughCopy("CNAME");
+
     eleventyConfig.setFrontMatterParsingOptions({
         excerpt: true,
         // Optional, default is "---"
