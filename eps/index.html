@@ -44,6 +44,64 @@
     </style>
     <title>Top 50 Songs</title>
     
+<style>
+    .excerpt {
+        margin: 1em 0;
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    li:nth-child(even) .excerpt {
+        flex-direction: row-reverse;
+    }
+
+    .excerpt-content p {
+        flex-grow: 1;
+        display: inline;
+    }
+
+    .excerpt-img {
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .excerpt-img img {
+        height: 150px;
+    }
+
+    li:nth-child(even) .excerpt-img {
+        margin-left: 0;
+        margin-right: 4em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        li:nth-child(even) .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        .excerpt-img {
+            margin-left: 0;
+            margin-bottom: 1em;
+            align-self: center;
+        }
+
+        .excerpt-img img {
+            height: 200px;
+        }
+
+        li:nth-child(even) .excerpt-img {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+</style>
 
 </head>
 
@@ -73,8 +131,14 @@
     <li class="ep" id="5">
         <i>The Poppies Bloom for No King</i> by Panopticon
         <div class="excerpt">
-            <p>An atmospheric, righteously angry black metal effort from a band who have consistently made some of the most grandiose, heartfelt projects in the genre for years. This is a showstopping listen, but I would not expect anything else from Panopticon at this point.</p>
+            <div class="excerpt-content">
+                <p>An atmospheric, righteously angry black metal effort from a band who have consistently made some of the most grandiose, heartfelt projects in the genre for years. This is a showstopping listen, but I would not expect anything else from Panopticon at this point.</p>
 
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/Panopticon-ThePoppiesBloomforNoKing.jpg" alt="The Poppies Bloom for No King cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>
@@ -83,8 +147,14 @@
     <li class="ep" id="4">
         <i>Return The Day</i> by Dog Race
         <div class="excerpt">
-            <p>A ghoulish, yet infectious gothic rock effort. The vocal performances on this are very wispy and chilling, and the band show their commitment to developing sinister atmospheres with spectral synths and reverb-soaked choruses. It’s certainly very 80’s revivalist, but it’s very well-done.</p>
+            <div class="excerpt-content">
+                <p>A ghoulish, yet infectious gothic rock effort. The vocal performances on this are very wispy and chilling, and the band show their commitment to developing sinister atmospheres with spectral synths and reverb-soaked choruses. It’s certainly very 80’s revivalist, but it’s very well-done.</p>
 
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/DogRace-ReturnTheDay.jpg" alt="Return The Day cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>
@@ -93,8 +163,14 @@
     <li class="ep" id="3">
         <i>♡</i> by Jane Remover
         <div class="excerpt">
-            <p>After aurally blending up the minds of their listeners with <em>Revengeseekerz</em> earlier this year, ♡ reworks previously released songs to show off Jane Remover’s penchant for pop appeal. It features some of the artist’s catchiest songs yet, and shows how they draw equally from 90’s and 2000’s pop and r&amp;b, along with the experimental pop of their peers.</p>
+            <div class="excerpt-content">
+                <p>After aurally blending up the minds of their listeners with <em>Revengeseekerz</em> earlier this year, ♡ reworks previously released songs to show off Jane Remover’s penchant for pop appeal. It features some of the artist’s catchiest songs yet, and shows how they draw equally from 90’s and 2000’s pop and r&amp;b, along with the experimental pop of their peers.</p>
 
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/JaneRemover-.png" alt="♡ cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>
@@ -103,8 +179,14 @@
     <li class="ep" id="2">
         <i>gutta child</i> by Gabriel Jacoby
         <div class="excerpt">
-            <p>At just 20 minutes, <em>gutta child</em> is a tour of the American South through detours of funk, blues, and R&amp;B. With its homespun arrangements of horns and keys, it’s an undeniably warm set of tracks that celebrates Jacoby’s Southern heritage. Songs like “the one” show how these genres can communicate selfless and romantic love, while “dirty south baby” solemnly mourns the disappearance of black men from his community.</p>
+            <div class="excerpt-content">
+                <p>At just 20 minutes, <em>gutta child</em> is a tour of the American South through detours of funk, blues, and R&amp;B. With its homespun arrangements of horns and keys, it’s an undeniably warm set of tracks that celebrates Jacoby’s Southern heritage. Songs like “the one” show how these genres can communicate selfless and romantic love, while “dirty south baby” solemnly mourns the disappearance of black men from his community.</p>
 
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/GabrielJacoby-guttachild.jpg" alt="gutta child cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>
@@ -113,8 +195,14 @@
     <li class="ep" id="1">
         <i>Forget In Mass</i> by Deki Alem
         <div class="excerpt">
-            <p>On <em>Forget In Mass,</em> Swedish hip hop duo Deki Alem, who I had never heard of until this point, revive a classic 90’s trip hop sound. I may be biased because the 90’s trip hop scene is one of my all-time favorite musical movements, but I was really happy to see a project that utilized influence from this time in such a fresh-sounding way. The overall sound is dark, propulsive, and emphasizes the need to maintain consciousness and individuality in a time of unparalleled societal isolation.</p>
+            <div class="excerpt-content">
+                <p>On <em>Forget In Mass,</em> Swedish hip hop duo Deki Alem, who I had never heard of until this point, revive a classic 90’s trip hop sound. I may be biased because the 90’s trip hop scene is one of my all-time favorite musical movements, but I was really happy to see a project that utilized influence from this time in such a fresh-sounding way. The overall sound is dark, propulsive, and emphasizes the need to maintain consciousness and individuality in a time of unparalleled societal isolation.</p>
 
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/DekiAlem-ForgetInMass.jpg" alt="Forget In Mass cover" loading="lazy">
+            </div>
         </div>
         <hr>
     </li>

@@ -47,11 +47,59 @@
 <style>
     .excerpt {
         margin: 1em 0;
+        display: flex;
+        align-items: center;
         font-family: 'Times New Roman', Times, serif;
     }
 
-    .excerpt p {
+    li:nth-child(even) .excerpt {
+        flex-direction: row-reverse;
+    }
+
+    .excerpt-content p {
+        flex-grow: 1;
         display: inline;
+    }
+
+    .excerpt-img {
+        margin-left: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .excerpt-img img {
+        height: 150px;
+    }
+
+    li:nth-child(even) .excerpt-img {
+        margin-left: 0;
+        margin-right: 4em;
+    }
+
+    @media only screen and (max-width: 540px) {
+        .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        li:nth-child(even) .excerpt {
+            flex-direction: column-reverse;
+        }
+
+        .excerpt-img {
+            margin-left: 0;
+            margin-bottom: 1em;
+            align-self: center;
+        }
+
+        .excerpt-img img {
+            height: 200px;
+        }
+
+        li:nth-child(even) .excerpt-img {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 </style>
 
@@ -487,9 +535,14 @@
 
         
         <div class="excerpt">
-            <p>On this year’s best protest song, Fiona Apple draws from her 2 years of experience as a court watcher in Maryland to sharply condemn the U.S. Cash-Bail system. Even when presumed innocent, people can be jailed pre-trial and cannot leave if they are unable to afford bail, which can devastate families as outlined in this song. Musically, Apple continues exploring the percussive, but austere arrangements that made 2020’s <em>Fetch the Bolt Cutters</em> so provocative.</p>
+            <div class="excerpt-content">
+                <p>On this year’s best protest song, Fiona Apple draws from her 2 years of experience as a court watcher in Maryland to sharply condemn the U.S. Cash-Bail system. Even when presumed innocent, people can be jailed pre-trial and cannot leave if they are unable to afford bail, which can devastate families as outlined in this song. Musically, Apple continues exploring the percussive, but austere arrangements that made 2020’s <em>Fetch the Bolt Cutters</em> so provocative.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/FionaApple-Pretriallethergohome.jpeg" alt="Pretrial (Let Her Go Home) cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -503,9 +556,14 @@
 
         
         <div class="excerpt">
-            <p>Does everything that this band touches turn to gold? Out of any track on Swans’ larger-than-life <em>Birthing,</em> “The Merge” is definitely evidence in their favor. Part sound collage, part swirling free jazz, part neo-folk, “The Merge” feels like a sonic rebirth and might be one of the most staggering pieces in their recent catalog.</p>
+            <div class="excerpt-content">
+                <p>Does everything that this band touches turn to gold? Out of any track on Swans’ larger-than-life <em>Birthing,</em> “The Merge” is definitely evidence in their favor. Part sound collage, part swirling free jazz, part neo-folk, “The Merge” feels like a sonic rebirth and might be one of the most staggering pieces in their recent catalog.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/Swans-TheMerge.png" alt="The Merge cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -519,9 +577,14 @@
 
         
         <div class="excerpt">
-            <p>On one of the most jaw-dropping singles of the year, Rosalia returned with dramatic string and choral arrangements, swooping operatic vocals, and a jaw-dropping combination of features from experimental auteurs Björk and Yves Tumor. It truly sounds like a pop song of larger-than-life, biblical proportions.</p>
+            <div class="excerpt-content">
+                <p>On one of the most jaw-dropping singles of the year, Rosalia returned with dramatic string and choral arrangements, swooping operatic vocals, and a jaw-dropping combination of features from experimental auteurs Björk and Yves Tumor. It truly sounds like a pop song of larger-than-life, biblical proportions.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/Rosalia-BerghainfeatBjörkYvesTumor.jpg" alt="Berghain (feat. Björk &amp; Yves Tumor) cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -535,9 +598,14 @@
 
         
         <div class="excerpt">
-            <p>2010s revival that sounds so good, I would prefer to listen to it than nearly any EDM hits that actually came out in the 2010s! On “iPod Touch,” Ninajirachi dives headfirst into digital nostalgia, and the more wholesome ways that technology colored the childhood memories of people born in the late 90s/early 2000s.</p>
+            <div class="excerpt-content">
+                <p>2010s revival that sounds so good, I would prefer to listen to it than nearly any EDM hits that actually came out in the 2010s! On “iPod Touch,” Ninajirachi dives headfirst into digital nostalgia, and the more wholesome ways that technology colored the childhood memories of people born in the late 90s/early 2000s.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/Ninajirachi-iPodTouch.jpg" alt="iPod Touch cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -551,9 +619,14 @@
 
         
         <div class="excerpt">
-            <p>With the pop perfection of <em>Fancy That,</em> this spot could easily go to “Stateside” or “Tonight” as contenders for the best pop songs of the year. However, “Illegal” is the song that I found myself returning to most frequently, with its nocturnal vibe, shimmering synths, and fun singalong chorus.</p>
+            <div class="excerpt-content">
+                <p>With the pop perfection of <em>Fancy That,</em> this spot could easily go to “Stateside” or “Tonight” as contenders for the best pop songs of the year. However, “Illegal” is the song that I found myself returning to most frequently, with its nocturnal vibe, shimmering synths, and fun singalong chorus.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/PinkPantheress-Illegal.jpg" alt="Illegal cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -567,9 +640,14 @@
 
         
         <div class="excerpt">
-            <p>A song that, for me, hits me like a brick every time I put it on. Instrumentally, it’s some of Big Thief’s most lush work yet - with very psychedelic, meandering guitar sounds, and an ethereal, reverb-soaked atmosphere. Then there are touches of strings in the mix and shimmering percussion that give it an even more spectral vibe. That said, though, the main attraction for me in “Incomprehensible” is the lyrics - if for no other reason than just being exhausted of the discourse around women aging. In this track, Adrienne Lenker addresses the way that society gives us the language to fear getting older, and goes on to celebrate the beauty of the older women who gave her life (“My mother and my grandma/my great-grandmother too/wrinkle like the river/sweeten like the dew”) as well as the features of aging that she sees in herself, just shy of 33 years old. Lenker does this in such a beautifully poetic way that it stops me in my tracks each time I hear it.</p>
+            <div class="excerpt-content">
+                <p>A song that, for me, hits me like a brick every time I put it on. Instrumentally, it’s some of Big Thief’s most lush work yet - with very psychedelic, meandering guitar sounds, and an ethereal, reverb-soaked atmosphere. Then there are touches of strings in the mix and shimmering percussion that give it an even more spectral vibe. That said, though, the main attraction for me in “Incomprehensible” is the lyrics - if for no other reason than just being exhausted of the discourse around women aging. In this track, Adrienne Lenker addresses the way that society gives us the language to fear getting older, and goes on to celebrate the beauty of the older women who gave her life (“My mother and my grandma/my great-grandmother too/wrinkle like the river/sweeten like the dew”) as well as the features of aging that she sees in herself, just shy of 33 years old. Lenker does this in such a beautifully poetic way that it stops me in my tracks each time I hear it.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/BigThief-Incomprehensible.jpg" alt="Incomprehensible cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -583,9 +661,14 @@
 
         
         <div class="excerpt">
-            <p>If I had more sway in this world, U.S. Girls and Meg Remy generally would be globally revered as one of the best pop acts working today. No matter how I feel about the overall experience of some of their records, they always put out at least one track that completely blows me away. For 2025’s <em>Scratch It,</em> that track was “Like James Said” - a prog-pop homage to James Brown whose character has “felt low for so long now, I’m ready for a change,” and invokes the power of dancing alone to feel better. There is also a great guitar solo on the back end of the track, and some dramatic string motifs that raise the stakes. A fantastic, fun, and true song in a discography full of them!</p>
+            <div class="excerpt-content">
+                <p>If I had more sway in this world, U.S. Girls and Meg Remy generally would be globally revered as one of the best pop acts working today. No matter how I feel about the overall experience of some of their records, they always put out at least one track that completely blows me away. For 2025’s <em>Scratch It,</em> that track was “Like James Said” - a prog-pop homage to James Brown whose character has “felt low for so long now, I’m ready for a change,” and invokes the power of dancing alone to feel better. There is also a great guitar solo on the back end of the track, and some dramatic string motifs that raise the stakes. A fantastic, fun, and true song in a discography full of them!</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/USGirls-LikeJamesSaid.jpg" alt="Like James Said cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -599,9 +682,14 @@
 
         
         <div class="excerpt">
-            <p>I still remember my first time listening to <em>EUSEXUA,</em> not knowing how things could get better as I got to the latter songs in the track list (aside from not being into “Childlike Things,”) and promptly having my mind completely blown by “Striptease.” Just the lilting, minor-key melody of the verses alone is so alluring, and sounds so bizarre for a pop song, that it’s hard to forget about the track once you hear it for the first time. Then, after the majority of the song’s trap-influenced sound, Twigs goes full ethereal club-mode for the coda, even throwing in one of the most dramatic vocal motifs of her career on the back end of the track - sounding a little bit like an operatic Dolores O’Riordan. All the while, she compares the act of becoming known by another person to the revealing, but calculated movements of a striptease. Like many great Twigs tracks, it’s equally sensual and ethereal, while combining sounds and styles that feel ancient, visceral, and cutting-edge.</p>
+            <div class="excerpt-content">
+                <p>I still remember my first time listening to <em>EUSEXUA,</em> not knowing how things could get better as I got to the latter songs in the track list (aside from not being into “Childlike Things,”) and promptly having my mind completely blown by “Striptease.” Just the lilting, minor-key melody of the verses alone is so alluring, and sounds so bizarre for a pop song, that it’s hard to forget about the track once you hear it for the first time. Then, after the majority of the song’s trap-influenced sound, Twigs goes full ethereal club-mode for the coda, even throwing in one of the most dramatic vocal motifs of her career on the back end of the track - sounding a little bit like an operatic Dolores O’Riordan. All the while, she compares the act of becoming known by another person to the revealing, but calculated movements of a striptease. Like many great Twigs tracks, it’s equally sensual and ethereal, while combining sounds and styles that feel ancient, visceral, and cutting-edge.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/FKATwigs-Striptease.png" alt="Striptease cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -615,9 +703,14 @@
 
         
         <div class="excerpt">
-            <p>Those of us who were privy to Michelle’s “pop songs 2020” EP with Ryan Galloway did a double take when the first verse of “Men in Bars” hit! This song is a revisitation and dressing up of the austere, demo-like “Ballad 0” that closed out that EP, and it makes for one of Zauner’s best songs. The dreamy, pensive melody works so well in the context of a country ballad, and I love the melancholic vibe that Jeff Bridges brings with his more gruff, Nick Cave-esque vocal. The lyrics are also fantastic: aided by the duet format, the dynamic between a man who is stuck in cycles of “tumbling down” before “finding his head again” and a woman who lapses in her faith due to frustration, is clearer than ever. The reminiscing between the characters and their commitment to staying together makes this track feel like a particularly mature take on this type of conflict in a long-term relationship. A good reminder of the magic Zauner evokes through her songwriting, in this case just by capturing a mundanely troubled relationship with so much perspective and empathy.</p>
+            <div class="excerpt-content">
+                <p>Those of us who were privy to Michelle’s “pop songs 2020” EP with Ryan Galloway did a double take when the first verse of “Men in Bars” hit! This song is a revisitation and dressing up of the austere, demo-like “Ballad 0” that closed out that EP, and it makes for one of Zauner’s best songs. The dreamy, pensive melody works so well in the context of a country ballad, and I love the melancholic vibe that Jeff Bridges brings with his more gruff, Nick Cave-esque vocal. The lyrics are also fantastic: aided by the duet format, the dynamic between a man who is stuck in cycles of “tumbling down” before “finding his head again” and a woman who lapses in her faith due to frustration, is clearer than ever. The reminiscing between the characters and their commitment to staying together makes this track feel like a particularly mature take on this type of conflict in a long-term relationship. A good reminder of the magic Zauner evokes through her songwriting, in this case just by capturing a mundanely troubled relationship with so much perspective and empathy.</p>
 
-            
+                
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/JapaneseBreakfastfeatJeffBridges-MeninBars.png" alt="Men in Bars cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
@@ -633,10 +726,15 @@
 
         
         <div class="excerpt">
-            <p>In 6 years of making end-of-year music lists, 2025 is the very first time that my favorite song of the year was from my favorite album of the year. In this case, there wasn’t any need for a second thought - no album gave me as much hope and excitement this year as <em>The Passionate Ones,</em> and “9 2 5” is the epitome of what makes the record work so well: from its bright piano keys to its energetic Baltimore club feel, to the story it tells. It also almost feels like the mission statement of NBT’s vision and philosophy.</p>
+            <div class="excerpt-content">
+                <p>In 6 years of making end-of-year music lists, 2025 is the very first time that my favorite song of the year was from my favorite album of the year. In this case, there wasn’t any need for a second thought - no album gave me as much hope and excitement this year as <em>The Passionate Ones,</em> and “9 2 5” is the epitome of what makes the record work so well: from its bright piano keys to its energetic Baltimore club feel, to the story it tells. It also almost feels like the mission statement of NBT’s vision and philosophy.</p>
 
-            <a href="/songs/1-NourishedbyTime-925/" style="color: gray;">Read
-                more&hellip;</a>
+                <a href="/songs/1-NourishedbyTime-925/" style="color: gray;">Read
+                    more&hellip;</a>
+            </div>
+            <div class="standard-dialog center excerpt-img">
+                <img src="/imgs/NourishedbyTime-925.jpg" alt="9 2 5 cover" loading="lazy">
+            </div>
         </div>
         
         <hr>
