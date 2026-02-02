@@ -73,7 +73,10 @@
     <p class="heading">
         <i>{{ title | markdownin | safe }}</i> by {{ artist | markdownin | safe }}
     </p>
+
+    {% if rank %}
     <p class="subheading">#{{ rank }}</p>
+    {% endif %}
 
     <div class="review-img review-img-mobile standard-dialog center">
         <img src="{{ img_url }}" />

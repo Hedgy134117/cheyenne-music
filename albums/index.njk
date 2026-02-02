@@ -86,4 +86,29 @@
   </li>
   {% endfor %}
 </ol>
+
+<p class="heading center">Honorable Mentions</p>
+<ul>
+  {% set sortedAlbums = collections.honorable %}
+  {% for album in sortedAlbums %}
+  <li class="album" id="{{ album.data.title }}">
+    <!-- <a href="{{ album.url }}"> -->
+    <i>{{ album.data.title | markdownin | safe }}</i> by {{ album.data.artist | markdownin | safe }}
+    <!-- </a> -->
+    <div class="excerpt">
+      <div class="excerpt-content">
+        {% if album.page.excerpt %}
+        {{ album.page.excerpt | markdown | safe }}
+        {% endif %}
+        {% if not album.data.is_short %}<a href="{{ album.url }}" style="color: gray;">Read more&hellip;</a>{%
+        endif %}
+      </div>
+      <div class="standard-dialog center excerpt-img">
+        <img src="{{ album.data.img_url }}" alt="{{ album.data.title }} cover" loading="lazy">
+      </div>
+    </div>
+    <hr>
+  </li>
+  {% endfor %}
+</ul>
 {% endblock%}

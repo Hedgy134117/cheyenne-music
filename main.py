@@ -32,6 +32,13 @@ def get_other_albums(filename: str) -> list[tuple[str, str]]:
     return re.findall(r"[0-9]+\. (.+)\, by (.+)", music)
 
 
+def get_other_albums_unordered(filename: str) -> list[tuple[str, str]]:
+    with open(filename, encoding="utf-8") as f:
+        music = "".join(f.readlines())
+
+    return re.findall(r"(.+)\, by (.+)", music)
+
+
 def download_album_art(albums: list[tuple[str, str]]) -> None:
     driver_options = Options()
     driver_options.add_argument("--headless=new")
@@ -365,12 +372,65 @@ def split_other(filename: str, path: Path) -> None:
             is_last_year = False
 
 
+def split_honorables(filename: str, path: Path) -> None:
+    with open(filename, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    i = 0
+
+    while i < len(lines):
+        # Find next album header
+        header_match = re.match(r"(.+), by (.+)", lines[i])
+        if not header_match:
+            i += 1
+            continue
+
+        title, artist = header_match.groups()
+
+        # Collect content until next header or end
+        content_lines = []
+        i += 1
+        while i < len(lines) and not re.match(r".+, by .+", lines[i]):
+            content_lines.append(lines[i].lstrip() + "\n")
+            if len(content_lines) == 2:
+                content_lines.append("<!-- excerpt -->\n\n")
+            i += 1
+
+        # Create frontmatter
+        clean_title = clean_text(title)
+        clean_artist = clean_text(artist)
+
+        frontmatter = [
+            "layout: album.njk\n",
+            "tags: honorable\n",
+            f"title: {title}\n",
+            f"artist: {artist}\n",
+            f"is_short: True\n",
+        ]
+
+        # Find image if exists
+        img_files = list(Path("imgs").glob(f"{clean_artist}-{clean_title}*"))
+        if img_files:
+            frontmatter.append(f"img_url: /imgs/{img_files[0].name}\n")
+
+        name = f"{clean_artist}-{clean_title}"
+
+        create_file(
+            path / f"{name}.md",
+            frontmatter,
+            content_lines,
+        )
+
+
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python main.py <download50|downloadother|split> [start] [end]")
+        print(
+            "Usage: python main.py <download50|downloadother|downloadun|split|splithon> [start] [end]"
+        )
         sys.exit(1)
 
-    MAIN = "Best Music of 2025 (1).md"
+    # MAIN = "Best Music of 2025 (1).md"
+    MAIN = "honorables.md"
 
     command = sys.argv[1]
 
@@ -384,11 +444,15 @@ if __name__ == "__main__":
         start = int(sys.argv[2]) if len(sys.argv) > 2 else 0
         end = int(sys.argv[3]) if len(sys.argv) > 3 else len(albums)
         download_album_art(albums[start:end])
+    elif command == "downloadun":
+        download_album_art(get_other_albums_unordered(MAIN))
     elif command == "split":
         split_top_50_albums(MAIN, Path("albums"))
         split_top_50_songs(MAIN, Path("songs"))
         split_top_5_eps(MAIN, Path("eps"))
         split_other(MAIN, Path("other"))
+    elif command == "splithon":
+        split_honorables(MAIN, Path("honorables"))
     else:
         print(f"Unknown command: {command}")
         sys.exit(1)
