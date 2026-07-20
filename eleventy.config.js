@@ -18,11 +18,13 @@ export default async function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("markdown", content => {
-        return md.render(content);
+        const stringContent = content ? String(content) : "";
+        return md.render(stringContent);
     })
 
     eleventyConfig.addFilter("markdownin", content => {
-        return md.renderInline(content);
+        const stringContent = content ? String(content) : "";
+        return md.renderInline(stringContent);
     })
 
     eleventyConfig.addPlugin(HtmlBasePlugin);
