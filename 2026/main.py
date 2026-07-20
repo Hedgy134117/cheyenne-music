@@ -38,7 +38,7 @@ def download_album_art(albums: list[tuple[str, str]]) -> None:
                 "album": title,
                 "artist": artist,
                 "country": "us",
-                "sources": "spotify",
+                "sources": "applemusic",
             }
         )
 
@@ -99,7 +99,7 @@ def split_albums(filename: str, path: Path, tags: list[str]) -> None:
             "layout: album.njk\n",
             f"tags: {tags}\n",
             f"rank: {rank}\n",
-            f"title: {title}\n",
+            f'title: "{title}"\n',
             f"artist: {artist}\n",
             f"is_short: True\n",
             f"prev: {prev if prev else ''}\n",
@@ -129,4 +129,11 @@ if __name__ == "__main__":
 
     # albums = get_albums(MAIN)
     # download_album_art(albums)
-    split_albums("jan/_jan.md", Path("jan"), ["album2026", "jan2026"])
+    # split_albums("jan/_jan.md", Path("jan"), ["album2026", "jan2026"])
+
+    # download_album_art(get_albums("feb/_feb.md"))
+    # split_albums("feb/_feb.md", Path("feb"), ["album2026", "feb2026"])
+    # split_albums("mar/_mar.md", Path("mar"), ["album2026", "mar2026"])
+    split_albums("apr/_apr.md", Path("apr"), ["album2026", "apr2026"])
+    split_albums("may/_may.md", Path("may"), ["album2026", "may2026"])
+    split_albums("jun/_jun.md", Path("jun"), ["album2026", "jun2026"])
